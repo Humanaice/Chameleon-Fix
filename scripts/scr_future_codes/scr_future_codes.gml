@@ -12,4 +12,4 @@ function scr_future_codes()
 /// @DnDVersion : 1
 /// @DnDHash : 4545B2E5
 /// @DnDDisabled : 1
-/// @DnDArgument : "code" "if (angulo_tiro_atual >= 35 or angulo_tiro_atual <= 5) {$(13_10)	incremento_angulo = incremento_angulo * -1;$(13_10)}$(13_10)$(13_10)angulo_tiro_atual = angulo_tiro_atual + incremento_angulo;"
+/// @DnDArgument : "code" "if (angulo_tiro_atual >= 35 or angulo_tiro_atual <= 5) {$(13_10)	incremento_angulo = incremento_angulo * -1;$(13_10)}$(13_10)$(13_10)angulo_tiro_atual = angulo_tiro_atual + incremento_angulo;$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)if (bullet_team == fireteam.ALLY)$(13_10){$(13_10)	if (facing == 1)$(13_10)	{$(13_10)		other.player_fire_cool = 0;$(13_10)		instance_destroy();$(13_10)	}$(13_10)}$(13_10)"

@@ -20,6 +20,7 @@
   "eventList": [
     {"isDnD":true,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_Player","path":"objects/o_Player/o_Player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":true,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_enemy_kamikaze","path":"objects/o_enemy_kamikaze/o_enemy_kamikaze.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":true,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_wall_despawn_bullets","path":"objects/o_wall_despawn_bullets/o_wall_despawn_bullets.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
