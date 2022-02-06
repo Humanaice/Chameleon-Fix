@@ -1,19 +1,21 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
-/// @DnDHash : 397E4497
-/// @DnDArgument : "code" "if (shield_amount > 0) $(13_10){$(13_10)	var _shield = instance_create_layer(x,y,"Layer_upgrade",o_shield);$(13_10)	shield_amount -= 1;$(13_10)	shield_dir += add_dir;$(13_10)	with (_shield)$(13_10)	{$(13_10)		angle = o_upgrade_get_shield.shield_dir;$(13_10)	}$(13_10)}$(13_10)$(13_10)if (shield_amount <= 0) $(13_10){$(13_10)	instance_destroy()$(13_10)}$(13_10)$(13_10)"
-if (shield_amount > 0) 
-{
-	var _shield = instance_create_layer(x,y,"Layer_upgrade",o_shield);
-	shield_amount -= 1;
-	shield_dir += add_dir;
-	with (_shield)
-	{
-		angle = o_upgrade_get_shield.shield_dir;
-	}
+/// @DnDHash : 76BAA9CB
+/// @DnDArgument : "code" "$(13_10)$(13_10)upgrade_shield_amount +=1;"
+
+
+upgrade_shield_amount +=1;
+
+/// @DnDAction : YoYo Games.Common.Function_Call
+/// @DnDVersion : 1
+/// @DnDHash : 08CE60EB
+/// @DnDApplyTo : other
+/// @DnDArgument : "function" "o_Player.create_shield"
+with(other) {
+	o_Player.create_shield();
 }
 
-if (shield_amount <= 0) 
-{
-	instance_destroy()
-}
+/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+/// @DnDVersion : 1
+/// @DnDHash : 20239947
+instance_destroy();

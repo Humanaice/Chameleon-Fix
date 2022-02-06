@@ -1,19 +1,4 @@
 /// @DnDAction : YoYo Games.Drawing.Draw_Self
 /// @DnDVersion : 1
-/// @DnDHash : 7CD5E1C9
+/// @DnDHash : 1AEC27EE
 draw_self();
-
-/// @DnDAction : YoYo Games.Common.Execute_Code
-/// @DnDVersion : 1
-/// @DnDHash : 7DBAB557
-/// @DnDArgument : "code" "$(13_10)$(13_10)draw_set_colour($FFFFFFFF & $ffffff);$(13_10)var l0F6CA152_0=($FFFFFFFF >> 24);$(13_10)draw_set_alpha(l0F6CA152_0 / $ff);$(13_10)$(13_10)draw_set_font(Font1);$(13_10)$(13_10)$(13_10)draw_text(20, 210, string("x_enemy") + string(hspd))$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)"
-
-
-draw_set_colour($FFFFFFFF & $ffffff);
-var l0F6CA152_0=($FFFFFFFF >> 24);
-draw_set_alpha(l0F6CA152_0 / $ff);
-
-draw_set_font(Font1);
-
-
-draw_text(20, 210, string("x_enemy") + string(hspd))
