@@ -35,3 +35,11 @@ clock_initial = 0
 global.clock = 0
 enemy_kamikaze_clock = 0
 enemys_to_create = 4
+
+/// @DnDAction : YoYo Games.Audio.Play_Audio
+/// @DnDVersion : 1
+/// @DnDHash : 4E5ACEB5
+/// @DnDArgument : "soundid" "snd_pause"
+/// @DnDArgument : "loop" "1"
+/// @DnDSaveInfo : "soundid" "snd_pause"
+audio_play_sound(snd_pause, 0, 1);

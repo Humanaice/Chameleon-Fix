@@ -1,11 +1,3 @@
-/// @DnDAction : YoYo Games.Common.Execute_Code
-/// @DnDVersion : 1
-/// @DnDHash : 76BAA9CB
-/// @DnDArgument : "code" "$(13_10)$(13_10)upgrade_shield_amount +=1;"
-
-
-upgrade_shield_amount +=1;
-
 /// @DnDAction : YoYo Games.Common.Function_Call
 /// @DnDVersion : 1
 /// @DnDHash : 08CE60EB
@@ -14,6 +6,21 @@ upgrade_shield_amount +=1;
 with(other) {
 	o_Player.create_shield();
 }
+
+/// @DnDAction : YoYo Games.Audio.Audio_Set_Volume
+/// @DnDVersion : 1
+/// @DnDHash : 717634D4
+/// @DnDArgument : "sound" "snd_pickup_1"
+/// @DnDArgument : "volume" "random_range(0.7,1.5)"
+/// @DnDSaveInfo : "sound" "snd_pickup_1"
+audio_sound_gain(snd_pickup_1, random_range(0.7,1.5), 0);
+
+/// @DnDAction : YoYo Games.Audio.Play_Audio
+/// @DnDVersion : 1
+/// @DnDHash : 098B5B0A
+/// @DnDArgument : "soundid" "snd_pickup_1"
+/// @DnDSaveInfo : "soundid" "snd_pickup_1"
+audio_play_sound(snd_pickup_1, 0, 0);
 
 /// @DnDAction : YoYo Games.Instances.Destroy_Instance
 /// @DnDVersion : 1
