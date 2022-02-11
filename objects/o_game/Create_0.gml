@@ -30,16 +30,16 @@ enemy_preset_1_spawn_cool = 0;
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 27390B90
-/// @DnDArgument : "code" "clock_initial = 0$(13_10)global.clock = 0$(13_10)enemy_kamikaze_clock = 0$(13_10)enemys_to_create = 4"
+/// @DnDArgument : "code" "clock_initial = 0$(13_10)global.clock = 0$(13_10)enemy_kamikaze_clock = 0$(13_10)enemys_to_create = 10;"
 clock_initial = 0
 global.clock = 0
 enemy_kamikaze_clock = 0
-enemys_to_create = 4
+enemys_to_create = 10;
 
 /// @DnDAction : YoYo Games.Audio.Play_Audio
 /// @DnDVersion : 1
 /// @DnDHash : 4E5ACEB5
-/// @DnDArgument : "soundid" "snd_pause"
+/// @DnDArgument : "soundid" "snd_music_cool_anamaniguchi_not_to_use"
 /// @DnDArgument : "loop" "1"
-/// @DnDSaveInfo : "soundid" "snd_pause"
-audio_play_sound(snd_pause, 0, 1);
+/// @DnDSaveInfo : "soundid" "snd_music_cool_anamaniguchi_not_to_use"
+audio_play_sound(snd_music_cool_anamaniguchi_not_to_use, 0, 1);
