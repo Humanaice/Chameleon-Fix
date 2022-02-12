@@ -1,11 +1,12 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 30323936
-/// @DnDArgument : "code" "if (image_alpha > 0)$(13_10){$(13_10)	y += spd;$(13_10)	image_alpha -= 0.025$(13_10)}$(13_10)$(13_10)if (image_alpha <= 0)$(13_10){$(13_10)	instance_destroy()$(13_10)}"
+/// @DnDArgument : "code" "direction = bullet_angle$(13_10)if (image_alpha > 0)$(13_10){$(13_10)	speed = bullet_spd;$(13_10)	image_alpha -= image_alpha_decrease$(13_10)}$(13_10)$(13_10)if (image_alpha <= 0)$(13_10){$(13_10)	instance_destroy()$(13_10)}"
+direction = bullet_angle
 if (image_alpha > 0)
 {
-	y += spd;
-	image_alpha -= 0.025
+	speed = bullet_spd;
+	image_alpha -= image_alpha_decrease
 }
 
 if (image_alpha <= 0)

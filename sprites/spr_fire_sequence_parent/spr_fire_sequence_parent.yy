@@ -8,13 +8,13 @@
   "collisionTolerance": 253,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 128,
+  "bbox_right": 127,
   "bbox_top": 0,
   "bbox_bottom": 127,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 129,
+  "width": 128,
   "height": 128,
   "textureGroupId": {
     "name": "Default",
@@ -25,9 +25,9 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"35189244-475f-4396-984a-aaac5835ecaf","path":"sprites/spr_fire_sequence_parent/spr_fire_sequence_parent.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"35189244-475f-4396-984a-aaac5835ecaf","path":"sprites/spr_fire_sequence_parent/spr_fire_sequence_parent.yy",},"LayerId":{"name":"8b9bb104-f9bb-4684-8495-45f704ddb533","path":"sprites/spr_fire_sequence_parent/spr_fire_sequence_parent.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"35189244-475f-4396-984a-aaac5835ecaf","path":"sprites/spr_fire_sequence_parent/spr_fire_sequence_parent.yy",},"LayerId":{"name":"bddfc6d0-25a0-4d30-b7b9-2ff1ac472f4d","path":"sprites/spr_fire_sequence_parent/spr_fire_sequence_parent.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"35189244-475f-4396-984a-aaac5835ecaf","path":"sprites/spr_fire_sequence_parent/spr_fire_sequence_parent.yy",},"LayerId":{"name":"c52a277d-af51-42c6-a32e-f118b836ad71","path":"sprites/spr_fire_sequence_parent/spr_fire_sequence_parent.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"35189244-475f-4396-984a-aaac5835ecaf","path":"sprites/spr_fire_sequence_parent/spr_fire_sequence_parent.yy",},"LayerId":{"name":"8b9bb104-f9bb-4684-8495-45f704ddb533","path":"sprites/spr_fire_sequence_parent/spr_fire_sequence_parent.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_fire_sequence_parent","path":"sprites/spr_fire_sequence_parent/spr_fire_sequence_parent.yy",},"resourceVersion":"1.0","name":"35189244-475f-4396-984a-aaac5835ecaf","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {

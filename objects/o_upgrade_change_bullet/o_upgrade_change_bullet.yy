@@ -31,7 +31,7 @@
     "path": "folders/Objects/Upgrades.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_change_bullet",
+  "name": "o_upgrade_change_bullet",
   "tags": [],
   "resourceType": "GMObject",
 }

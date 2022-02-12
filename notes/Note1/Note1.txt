@@ -1,0 +1,1 @@
+Bullet that creates a line of other bullets
