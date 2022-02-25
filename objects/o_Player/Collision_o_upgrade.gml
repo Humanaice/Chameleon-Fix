@@ -17,7 +17,7 @@ instance_destroy(other);
 
 /// @DnDAction : YoYo Games.Audio.Audio_Set_Volume
 /// @DnDVersion : 1
-/// @DnDHash : 39EDE24D
+/// @DnDHash : 7CB779A1
 /// @DnDArgument : "sound" "snd_pickup_2"
 /// @DnDArgument : "volume" "random_range(0.7,1.5)"
 /// @DnDSaveInfo : "sound" "snd_pickup_2"
@@ -25,7 +25,7 @@ audio_sound_gain(snd_pickup_2, random_range(0.7,1.5), 0);
 
 /// @DnDAction : YoYo Games.Audio.Play_Audio
 /// @DnDVersion : 1
-/// @DnDHash : 56148358
+/// @DnDHash : 74A5F8FA
 /// @DnDArgument : "soundid" "snd_pickup_2"
 /// @DnDSaveInfo : "soundid" "snd_pickup_2"
 audio_play_sound(snd_pickup_2, 0, 0);

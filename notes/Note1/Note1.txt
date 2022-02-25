@@ -1,1 +1,10 @@
 Bullet that creates a line of other bullets
+Ajust Enemy spawner
+Create new enemy  types
+Fix Bommerang and add new types for it
+New Bullet type - Ultra laser
+Fix ball scale and speed to be a bit fairer
+Create mini boss
+Create boss
+Create Timeline
+Create paths

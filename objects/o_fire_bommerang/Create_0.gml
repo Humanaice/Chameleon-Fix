@@ -1,24 +1,28 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 1EC3B1FA
-/// @DnDArgument : "code" "bullet_team = 0;$(13_10)facing = 0;$(13_10)limit_short_y = 10$(13_10)limit_long_y = 30$(13_10)$(13_10)if (bullet_team == fireteam.ALLY)$(13_10){$(13_10)	facing = -1;$(13_10)} else$(13_10){$(13_10)	facing = 1;$(13_10)}$(13_10)$(13_10)spd = 1 * facing;$(13_10)vspd = 1;$(13_10)distance = -12 ;$(13_10)$(13_10)going_down_relative = false;$(13_10)check = false;$(13_10)image_angle_random = choose(-10,10)$(13_10)$(13_10)$(13_10)"
-bullet_team = 0;
-facing = 0;
-limit_short_y = 10
-limit_long_y = 30
+/// @DnDArgument : "code" "initial_x = x;$(13_10)initial_y = y;$(13_10)bullet_spd = 20;$(13_10)bullet_spd_dna = 20;$(13_10)$(13_10)bullet_team = fireteam.ALLY;$(13_10)bullet_preset = firepattern.IN_LINE;$(13_10)$(13_10)bullet_angle = 90;$(13_10)add_bullet_angle = 0;$(13_10)image_angle_random = choose(-20,20)$(13_10)$(13_10)scale = 1;$(13_10)image_xscale = scale;$(13_10)image_yscale = scale;$(13_10)image_alpha = 1;$(13_10)$(13_10)$(13_10)path_current_endaction = path_action_stop;$(13_10)path_current = 0;$(13_10)$(13_10)$(13_10)_position = 0;$(13_10)_position_limit = 0.5;$(13_10)$(13_10)"
+initial_x = x;
+initial_y = y;
+bullet_spd = 20;
+bullet_spd_dna = 20;
 
-if (bullet_team == fireteam.ALLY)
-{
-	facing = -1;
-} else
-{
-	facing = 1;
-}
+bullet_team = fireteam.ALLY;
+bullet_preset = firepattern.IN_LINE;
 
-spd = 1 * facing;
-vspd = 1;
-distance = -12 ;
+bullet_angle = 90;
+add_bullet_angle = 0;
+image_angle_random = choose(-20,20)
 
-going_down_relative = false;
-check = false;
-image_angle_random = choose(-10,10)
+scale = 1;
+image_xscale = scale;
+image_yscale = scale;
+image_alpha = 1;
+
+
+path_current_endaction = path_action_stop;
+path_current = 0;
+
+
+_position = 0;
+_position_limit = 0.5;

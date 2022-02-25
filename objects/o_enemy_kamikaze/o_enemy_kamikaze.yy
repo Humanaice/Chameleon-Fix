@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_enemy_orange_kami",
-    "path": "sprites/spr_enemy_orange_kami/spr_enemy_orange_kami.yy",
+    "name": "spr_spsh_enemy_red",
+    "path": "sprites/spr_spsh_enemy_red/spr_spsh_enemy_red.yy",
   },
   "solid": false,
   "visible": true,

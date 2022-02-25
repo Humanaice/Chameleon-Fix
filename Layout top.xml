@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ActiveConfig="Default" Platform="Windows" Runtime="VM" Device="Default">
+	<Desktop x="0" y="23" width="1920" height="1017" id="19" title="Chameleon Fix - GameMaker Studio 2*" windowState="Maximized">
+		<Workspaces>
+			<Workspace active="False" chain="False" title="rm_title_screan" localise_title="" workspace_offset="[0, 0]" workspace_scale="1">
+				<Module Command="open_room_editor" WorkspaceOwner="true">
+					<Room id="rm_title_screan">
+						<RoomEditArea>
+							<PanArea zoom="1" pan="[0, 0]" />
+							<Properties />
+							<Selected>
+								<Layer GUID="Background" />
+							</Selected>
+						</RoomEditArea>
+					</Room>
+				</Module>
+			</Workspace>
+			<Workspace active="False" chain="False" title="rm_game_over" localise_title="" workspace_offset="[0, 0]" workspace_scale="1">
+				<Module Command="open_room_editor" WorkspaceOwner="true">
+					<Room id="rm_game_over">
+						<RoomEditArea>
+							<PanArea zoom="0.68" pan="[-482.219, -82]" />
+							<Properties />
+							<Selected>
+								<Layer GUID="Assets_1" />
+								<Item name="graphic_1E1BC6CA" path="rooms/rm_game_over/rm_game_over.yy" />
+							</Selected>
+						</RoomEditArea>
+					</Room>
+				</Module>
+			</Workspace>
+			<Workspace active="False" chain="False" title="rm_level_1" localise_title="" workspace_offset="[0, 0]" workspace_scale="1">
+				<Module Command="open_room_editor" WorkspaceOwner="true">
+					<Room id="rm_level_1">
+						<RoomEditArea>
+							<PanArea zoom="1" pan="[0, 0]" />
+							<Properties />
+							<Selected>
+								<Layer GUID="Background" />
+							</Selected>
+						</RoomEditArea>
+					</Room>
+				</Module>
+			</Workspace>
+			<Workspace active="True" chain="True" title="Workspace 1" localise_title="Workspace_TabTitle" localise_arguments="[&#xD;&#xA;    &quot;1&quot;&#xD;&#xA;]" workspace_offset="[5282.416, 1040.917]" workspace_scale="1">
+				<Module Command="open_object_editor">
+					<ObjectEditor objectName="o_game" eventsOpen="true" parentOpen="false" physicsOpen="false" physicsEditorOpen="false" propertiesOpen="false" activeWindow="parent">
+						<WorkspaceChain left="105dpi_px" top="220dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="0" isActive="False" w="1406dpi_px" h="600dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\o_game\Create_0.gml" resource="o_game" subResource="0_0" overridden_title="False" view_readonly="false" />
+							<Script column="0" file="${project_dir}\objects\o_game\Step_0.gml" resource="o_game" subResource="3_0" overridden_title="False" view_readonly="false" />
+							<Script column="0" file="${project_dir}\objects\o_game\Draw_0.gml" resource="o_game" subResource="8_0" overridden_title="False" view_readonly="false" />
+							<Script column="0" file="${project_dir}\objects\o_game\KeyPress_38.gml" resource="o_game" subResource="9_38" overridden_title="False" view_readonly="false" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectName="o_upgradde_parent" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" propertiesOpen="false" activeWindow="physics">
+						<WorkspaceChain left="105dpi_px" top="1566dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="1" isActive="False" w="1406dpi_px" h="600dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\o_upgradde_parent\Create_0.gml" resource="o_upgradde_parent" subResource="0_0" overridden_title="False" view_readonly="false" />
+							<Script column="0" file="${project_dir}\objects\o_upgradde_parent\Step_0.gml" resource="o_upgradde_parent" subResource="3_0" overridden_title="False" view_readonly="false" />
+							<Script column="0" file="${project_dir}\objects\o_upgradde_parent\Destroy_0.gml" resource="o_upgradde_parent" subResource="1_0" overridden_title="False" view_readonly="false" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectName="o_upgrade" eventsOpen="true" parentOpen="false" physicsOpen="false" physicsEditorOpen="false" propertiesOpen="false" activeWindow="parent">
+						<WorkspaceChain left="105dpi_px" top="2196dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="1" isActive="False" w="1406dpi_px" h="600dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\o_upgradde_parent\Create_0.gml" resource="o_upgradde_parent" subResource="0_0" overridden_title="False" view_readonly="false" />
+							<Script column="0" file="${project_dir}\objects\o_upgradde_parent\Step_0.gml" resource="o_upgradde_parent" subResource="3_0" overridden_title="False" view_readonly="false" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectName="o_upgrade_get_shield" eventsOpen="true" parentOpen="false" physicsOpen="false" physicsEditorOpen="false" propertiesOpen="false" activeWindow="parent">
+						<WorkspaceChain left="105dpi_px" top="3456dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="2" isActive="False" w="1410dpi_px" h="600dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\o_upgrade_get_shield\Collision_o_Player.gml" resource="o_upgrade_get_shield" subResource="4_0_o_Player" overridden_title="False" view_readonly="false" />
+							<Script column="0" file="${project_dir}\objects\o_upgradde_parent\Create_0.gml" resource="o_upgradde_parent" subResource="0_0" overridden_title="False" view_readonly="false" />
+							<Script column="0" file="${project_dir}\objects\o_upgrade_get_shield\Destroy_0.gml" resource="o_upgrade_get_shield" subResource="1_0" overridden_title="False" view_readonly="false" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectName="o_upgrade_change_bullet" eventsOpen="true" parentOpen="false" physicsOpen="false" physicsEditorOpen="false" propertiesOpen="false" activeWindow="parent">
+						<WorkspaceChain left="105dpi_px" top="2826dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="2" isActive="False" w="1407dpi_px" h="600dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\o_upgradde_parent\Create_0.gml" resource="o_upgradde_parent" subResource="0_0" overridden_title="False" view_readonly="false" />
+							<Script column="0" file="${project_dir}\objects\o_upgradde_parent\Destroy_0.gml" resource="o_upgradde_parent" subResource="1_0" overridden_title="False" view_readonly="false" />
+							<Script column="0" file="${project_dir}\objects\o_upgradde_parent\Step_0.gml" resource="o_upgradde_parent" subResource="3_0" overridden_title="False" view_readonly="false" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectName="o_Player" eventsOpen="true" parentOpen="false" physicsOpen="false" physicsEditorOpen="false" propertiesOpen="false" activeWindow="parent">
+						<WorkspaceChain left="105dpi_px" top="861dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="1" isActive="False" w="1406dpi_px" h="635dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\o_Player\Create_0.gml" resource="o_Player" subResource="0_0" overridden_title="False" view_readonly="false" />
+							<Script column="0" file="${project_dir}\objects\o_Player\Collision_o_upgrade_health.gml" resource="o_Player" subResource="4_0_o_upgrade_health" overridden_title="False" view_readonly="false" />
+							<Script column="0" file="${project_dir}\objects\o_Player\Collision_o_upgrade.gml" resource="o_Player" subResource="4_0_o_upgrade" overridden_title="False" view_readonly="false" />
+							<Script column="0" file="${project_dir}\objects\o_Player\Collision_o_upgrade_change_bullet.gml" resource="o_Player" subResource="4_0_o_upgrade_change_bullet" overridden_title="False" view_readonly="false" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectName="o_upgrade_health" eventsOpen="true" parentOpen="false" physicsOpen="false" physicsEditorOpen="false" propertiesOpen="false" activeWindow="parent">
+						<WorkspaceChain left="105dpi_px" top="4086dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="0" isActive="False" w="1410dpi_px" h="600dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\o_upgrade_health\Create_0.gml" resource="o_upgrade_health" subResource="0_0" overridden_title="False" view_readonly="false" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectName="o_explosion" eventsOpen="true" parentOpen="false" physicsOpen="false" physicsEditorOpen="false" propertiesOpen="false" activeWindow="parent">
+						<WorkspaceChain left="105dpi_px" top="4756dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="0" isActive="False" w="1412dpi_px" h="600dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\o_explosion\Create_0.gml" resource="o_explosion" subResource="0_0" overridden_title="False" view_readonly="false" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectName="o_bullet_parent" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" propertiesOpen="false" activeWindow="physics">
+						<WorkspaceChain left="2217.5dpi_px" top="221dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="0" isActive="False" w="1415dpi_px" h="600dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\o_bullet_parent\Collision_o_Player.gml" resource="o_bullet_parent" subResource="4_0_o_Player" overridden_title="False" view_readonly="false" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectName="o_fire_straight" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" propertiesOpen="false" activeWindow="physics">
+						<WorkspaceChain left="2217.5dpi_px" top="891dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="1" isActive="False" w="1416dpi_px" h="600dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\o_fire_straight\Create_0.gml" resource="o_fire_straight" subResource="0_0" overridden_title="False" view_readonly="false" />
+							<Script column="0" file="${project_dir}\objects\o_fire_straight\Step_0.gml" resource="o_fire_straight" subResource="3_0" overridden_title="False" view_readonly="false" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectName="o_fire_sequence_parent" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" propertiesOpen="false" activeWindow="physics">
+						<WorkspaceChain left="2217.5dpi_px" top="1561dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="0" isActive="False" w="1416dpi_px" h="600dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\o_fire_sequence_parent\Create_0.gml" resource="o_fire_sequence_parent" subResource="0_0" overridden_title="False" view_readonly="false" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectName="o_fire_sequence_kid" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" propertiesOpen="false" activeWindow="physics">
+						<WorkspaceChain left="2217.5dpi_px" top="2201dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="1" isActive="False" w="1415dpi_px" h="600dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\o_fire_sequence_kid\Create_0.gml" resource="o_fire_sequence_kid" subResource="0_0" overridden_title="False" view_readonly="false" />
+							<Script column="0" file="${project_dir}\objects\o_fire_sequence_kid\Step_0.gml" resource="o_fire_sequence_kid" subResource="3_0" overridden_title="False" view_readonly="false" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectName="o_fire_ball" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" propertiesOpen="false" activeWindow="physics">
+						<WorkspaceChain left="2217.5dpi_px" top="2841dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="1" isActive="False" w="1421dpi_px" h="600dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\o_fire_ball\Create_0.gml" resource="o_fire_ball" subResource="0_0" overridden_title="False" view_readonly="false" />
+							<Script column="0" file="${project_dir}\objects\o_fire_ball\Step_0.gml" resource="o_fire_ball" subResource="3_0" overridden_title="False" view_readonly="false" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectName="o_fire_explosion_ball" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" propertiesOpen="false" activeWindow="physics">
+						<WorkspaceChain left="2217.5dpi_px" top="3481dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="1" isActive="False" w="1425dpi_px" h="600dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\o_fire_explosion_ball\Create_0.gml" resource="o_fire_explosion_ball" subResource="0_0" overridden_title="False" view_readonly="false" />
+							<Script column="0" file="${project_dir}\objects\o_fire_explosion_ball\Destroy_0.gml" resource="o_fire_explosion_ball" subResource="1_0" overridden_title="False" view_readonly="false" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectName="o_fire_explosion_grenade" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" propertiesOpen="false" activeWindow="physics">
+						<WorkspaceChain left="2217.5dpi_px" top="4121dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="0" isActive="False" w="1424dpi_px" h="600dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\o_fire_explosion_grenade\Create_0.gml" resource="o_fire_explosion_grenade" subResource="0_0" overridden_title="False" view_readonly="false" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectName="o_fire_bommerang" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" propertiesOpen="false" activeWindow="physics">
+						<WorkspaceChain left="2217.5dpi_px" top="4761dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="0" isActive="False" w="1428dpi_px" h="600dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\o_fire_bommerang\Create_0.gml" resource="o_fire_bommerang" subResource="0_0" overridden_title="False" view_readonly="false" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectName="o_fire_explosion_shock" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" propertiesOpen="false" activeWindow="physics">
+						<WorkspaceChain left="2217.5dpi_px" top="5401dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="0" isActive="False" w="1426dpi_px" h="600dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\o_fire_explosion_shock\Create_0.gml" resource="o_fire_explosion_shock" subResource="0_0" overridden_title="False" view_readonly="false" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectName="o_shield" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" propertiesOpen="false" activeWindow="physics">
+						<WorkspaceChain left="2217.5dpi_px" top="6041dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="0" isActive="False" w="1428dpi_px" h="600dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\o_shield\Create_0.gml" resource="o_shield" subResource="0_0" overridden_title="False" view_readonly="false" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectName="o_enemy_parent" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" propertiesOpen="false" activeWindow="physics">
+						<WorkspaceChain left="4343.75dpi_px" top="224dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="1" isActive="False" w="1425dpi_px" h="600dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\o_enemy_parent\Collision_o_Player.gml" resource="o_enemy_parent" subResource="4_0_o_Player" overridden_title="False" view_readonly="false" />
+							<Script column="0" file="${project_dir}\objects\o_enemy_parent\Destroy_0.gml" resource="o_enemy_parent" subResource="1_0" overridden_title="False" view_readonly="false" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+				<Module Command="open_object_editor">
+					<ObjectEditor objectName="o_enemy_kamikaze" eventsOpen="true" parentOpen="true" physicsOpen="false" physicsEditorOpen="false" propertiesOpen="false" activeWindow="physics">
+						<WorkspaceChain left="4343.75dpi_px" top="894dpi_px" />
+						<DocumentWindow columns="1" fullscreen="False" activeTab="2" isActive="False" w="1426dpi_px" h="600dpi_px" linkIndex="-1">
+							<Script column="0" file="${project_dir}\objects\o_enemy_kamikaze\Create_0.gml" resource="o_enemy_kamikaze" subResource="0_0" overridden_title="False" view_readonly="false" />
+							<Script column="0" file="${project_dir}\objects\o_enemy_kamikaze\Step_0.gml" resource="o_enemy_kamikaze" subResource="3_0" overridden_title="False" view_readonly="false" />
+							<Script column="0" file="${project_dir}\objects\o_enemy_kamikaze\Draw_0.gml" resource="o_enemy_kamikaze" subResource="8_0" overridden_title="False" view_readonly="false" />
+						</DocumentWindow>
+					</ObjectEditor>
+				</Module>
+			</Workspace>
+			<Workspace active="False" chain="False" title="Code" localise_title="CodeWindow_Title" workspace_offset="[0, 0]" workspace_scale="1">
+				<Module Command="DocumentWindow_RestoreLayout" WorkspaceOwner="true">
+					<DocumentWindow columns="1" fullscreen="True" activeTab="2" isActive="False">
+						<Script column="0" file="${project_dir}\scripts\scr_get_input\scr_get_input.gml" resource="scr_get_input" overridden_title="False" view_readonly="false" />
+						<Script column="0" file="${project_dir}\scripts\scr_get_input_gamepad\scr_get_input_gamepad.gml" resource="scr_get_input_gamepad" overridden_title="False" view_readonly="false" />
+						<Script column="0" file="${project_dir}\scripts\scr_player_overall\scr_player_overall.gml" resource="scr_player_overall" overridden_title="False" view_readonly="false" />
+					</DocumentWindow>
+				</Module>
+			</Workspace>
+		</Workspaces>
+		<Dock state="Expanded" type="eLeft" restore_size="287.0934dpi_px" active_tab="0">
+			<DockTab localise_title="RoomEditor_DockTab" cell_sizes="[466,336,198]" layout_id="room_editor_tab" layout_guid="1243e795-00e0-455d-b725-6a841b4e0734" />
+		</Dock>
+		<Dock state="Expanded" type="eRight" restore_size="303.2109dpi_px" active_tab="0">
+			<DockTab localise_title="ResourceTree_Title" cell_sizes="[605,317]" layout_id="dock_tab_1" layout_guid="618d4e2c-45d2-4028-9fd4-54d1eaf38d75">
+				<Module Command="open_asset_browser">
+					<AssetBrowser sort="Custom" foldersFirst="True" zoom="90">
+						<Window left="" right="" top="" bottom="" width="370dpi_px" height="463dpi_px" flags="Default" title="Asset Browser" localise_title="AssetBrowser_Title" />
+					</AssetBrowser>
+				</Module>
+				<Module Command="open_recent_windows">
+					<RecentWindowsWindow left="" right="" top="" bottom="" width="400dpi_px" height="100dpi_px" flags="Default" title="Recent Windows" localise_title="recentwindows_title" />
+				</Module>
+			</DockTab>
+		</Dock>
+		<Dock state="Expanded" type="eBottom" restore_size="191.8dpi_px" active_tab="0">
+			<DockTab localise_title="OutputPanel_Output" cell_sizes="[1000]" layout_id="dock_tab_1" layout_guid="69f6c1e8-8818-4886-81f3-db41714fd2f8">
+				<Module Command="open_output_panel">
+					<Window left="0px" right="" top="0px" bottom="" width="900px" height="240px" flags="Default" title="Output" localise_title="OutputPanel_Title" />
+				</Module>
+			</DockTab>
+			<DockTab localise_title="OutputPanel_SearchResults" cell_sizes="[1000]" layout_id="dock_tab_2" layout_guid="7da70b28-ba54-4e6b-8e94-be7bbcd5ab5e">
+				<Module Command="open_search_output_panel">
+					<Window left="0px" right="" top="0px" bottom="" width="900px" height="240px" flags="Default" title="Search Results" localise_title="OutputPanel_SearchResults" />
+				</Module>
+			</DockTab>
+			<DockTab localise_title="OutputPanel_SourceControl" cell_sizes="[1000]" layout_id="dock_tab_3" layout_guid="fcd2548e-6fd5-4cb4-8876-8cf33610df4e">
+				<Module Command="open_sc_output_panel">
+					<Window left="0px" right="" top="0px" bottom="" width="900px" height="240px" flags="Default" title="Source Control" localise_title="OutputPanel_SourceControl" />
+				</Module>
+			</DockTab>
+			<DockTab localise_title="Breakpoints" cell_sizes="[1000]" layout_id="dock_tab_4" layout_guid="11aabcd1-e217-42aa-8e7b-22c7a952475d">
+				<Module Command="open_breakpoint_mgr">
+					<Window left="0px" right="" top="0px" bottom="" width="900px" height="240px" flags="Default" title="Breakpoints" localise_title="Breakpoints" />
+				</Module>
+			</DockTab>
+			<DockTab localise_title="SyntaxErrors" cell_sizes="[1000]" layout_id="dock_tab_6" layout_guid="92e07555-d167-4afa-9ba1-b657cb393893">
+				<Module Command="show_syntax_errors">
+					<Window left="0px" right="" top="0px" bottom="" width="900px" height="240px" flags="Default" title="Syntax Errors" localise_title="SyntaxErrors" />
+				</Module>
+			</DockTab>
+			<DockTab localise_title="CompileErrors" cell_sizes="[1000]" layout_id="dock_tab_7" layout_guid="7220cfa6-7599-41a6-9088-d42314bd7738">
+				<Module Command="show_compile_errors">
+					<Window left="1042px" right="" top="821.5px" bottom="" width="900dpi_px" height="240dpi_px" flags="Default" title="Compile Errors" localise_title="CompileErrors" />
+				</Module>
+			</DockTab>
+		</Dock>
+	</Desktop>
+	<Modules>
+		<YoYoStudio.Plugins.CorePlugins.DnD.DnDModule>
+			<LivePreviews />
+		</YoYoStudio.Plugins.CorePlugins.DnD.DnDModule>
+		<YoYoStudio.Plugins.CorePlugins.RoomEditorModule>
+			<RoomEditor>
+				<LayerProperties left="20dpi_px" right="" top="" bottom="350dpi_px" width="260dpi_px" height="330dpi_px" flags="Default" title="Background Layer Properties - rm_level_1" localise_title="RoomEditor_LayerProperties" dock_type="eLeft" dock_tab_index="0" dock_list_index="1" dock_proportion="1.010544" dock_tab_name="Room Editor" dock_tab_localise_name="RoomEditor_DockTab" dock_tab_id="room_editor_tab" dock_tab_guid="1243e795-00e0-455d-b725-6a841b4e0734" desktop="19" />
+				<Layers left="340dpi_px" right="" top="" bottom="270dpi_px" width="320dpi_px" height="250dpi_px" flags="CloseButton, MinimizeButton, ResizeButton" title="Layers - rm_level_1" localise_title="RoomEditor_Layers" dock_type="eLeft" dock_tab_index="0" dock_list_index="0" dock_proportion="1.398446" dock_tab_name="Room Editor" dock_tab_localise_name="RoomEditor_DockTab" dock_tab_id="room_editor_tab" dock_tab_guid="1243e795-00e0-455d-b725-6a841b4e0734" desktop="19" />
+				<RoomProperties left="10dpi_px" right="" top="125dpi_px" bottom="" width="300dpi_px" height="240dpi_px" flags="Default" title="Properties - rm_level_1" localise_title="RoomEditor_RoomProperties" dock_type="eLeft" dock_tab_index="0" dock_list_index="2" dock_proportion="0.5960044" dock_tab_name="Room Editor" dock_tab_localise_name="RoomEditor_DockTab" dock_tab_id="room_editor_tab" dock_tab_guid="1243e795-00e0-455d-b725-6a841b4e0734" desktop="19" />
+			</RoomEditor>
+		</YoYoStudio.Plugins.CorePlugins.RoomEditorModule>
+	</Modules>
+</Project>

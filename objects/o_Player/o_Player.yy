@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_player_blueship",
-    "path": "sprites/spr_player_blueship/spr_player_blueship.yy",
+    "name": "spr_spaceship_base",
+    "path": "sprites/spr_spaceship_base/spr_spaceship_base.yy",
   },
   "solid": false,
   "visible": true,

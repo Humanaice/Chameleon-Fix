@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "SpaceShip",
+    "path": "folders/Sprites/SpaceShip.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_enemy_orange_kami",
