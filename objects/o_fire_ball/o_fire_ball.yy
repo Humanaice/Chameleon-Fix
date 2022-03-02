@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Bullets",
-    "path": "folders/Objects/Bullets.yy",
+    "name": "Ball",
+    "path": "folders/Objects/Bullets/Ball.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_fire_ball",

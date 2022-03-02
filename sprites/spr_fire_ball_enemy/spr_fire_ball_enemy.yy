@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 170,
   "swfPrecision": 2.525,
-  "bbox_left": 4,
-  "bbox_right": 43,
-  "bbox_top": 4,
-  "bbox_bottom": 41,
+  "bbox_left": 0,
+  "bbox_right": 0,
+  "bbox_top": 0,
+  "bbox_bottom": 0,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"79d50786-3757-4f01-a121-c83d671e6ca9","path":"sprites/spr_fire_ball_enemy/spr_fire_ball_enemy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"79d50786-3757-4f01-a121-c83d671e6ca9","path":"sprites/spr_fire_ball_enemy/spr_fire_ball_enemy.yy",},"LayerId":{"name":"121c9d4e-12fd-48ce-ba1c-55a2d4222e4f","path":"sprites/spr_fire_ball_enemy/spr_fire_ball_enemy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_fire_ball_enemy","path":"sprites/spr_fire_ball_enemy/spr_fire_ball_enemy.yy",},"resourceVersion":"1.0","name":"79d50786-3757-4f01-a121-c83d671e6ca9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"40384201-5675-4cb9-bc17-2a6c4f95aca7","path":"sprites/spr_fire_ball_enemy/spr_fire_ball_enemy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"40384201-5675-4cb9-bc17-2a6c4f95aca7","path":"sprites/spr_fire_ball_enemy/spr_fire_ball_enemy.yy",},"LayerId":{"name":"121c9d4e-12fd-48ce-ba1c-55a2d4222e4f","path":"sprites/spr_fire_ball_enemy/spr_fire_ball_enemy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_fire_ball_enemy","path":"sprites/spr_fire_ball_enemy/spr_fire_ball_enemy.yy",},"resourceVersion":"1.0","name":"40384201-5675-4cb9-bc17-2a6c4f95aca7","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_fire_ball_enemy","path":"sprites/spr_fire_ball_enemy/spr_fire_ball_enemy.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"668494c5-6a93-4931-ae50-9e082a480d49","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"79d50786-3757-4f01-a121-c83d671e6ca9","path":"sprites/spr_fire_ball_enemy/spr_fire_ball_enemy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9917c2fe-6e9f-4aed-ba84-dc33ab987f85","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"40384201-5675-4cb9-bc17-2a6c4f95aca7","path":"sprites/spr_fire_ball_enemy/spr_fire_ball_enemy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,

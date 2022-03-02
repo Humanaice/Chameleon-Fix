@@ -1,7 +1,7 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 4FAE14B5
-/// @DnDArgument : "code" "$(13_10)hspd = hspd + facing_horizontal;$(13_10)if (hspd >= limit_short_x) or (hspd <= -limit_short_x)$(13_10){$(13_10)	hspd = hspd + (facing_horizontal/2)$(13_10)	if (hspd >= limit_long_x) or (hspd <= -limit_long_x)  $(13_10)	{$(13_10)		facing_horizontal *= -1;$(13_10)	}$(13_10)}$(13_10)$(13_10)$(13_10)y += vspd;$(13_10)x += hspd;$(13_10)$(13_10)$(13_10)if (enemy_kamikaze_fire_cool <=0)$(13_10){$(13_10)	if (enemy_kamikaze_fire_random <= random_generator)$(13_10)	{$(13_10)		var _fire = instance_create_layer(x,bbox_bottom,"Layer_bullet",o_fire_ball);$(13_10)		with (_fire)$(13_10)		{$(13_10)			bullet_team = fireteam.ENEMY;$(13_10)			bullet_preset = firepattern.HOMING;$(13_10)			bullet_angle =  point_direction(x, y, o_Player.x, o_Player.y);$(13_10)		}$(13_10)		enemy_kamikaze_fire_cool = 100;$(13_10)	}$(13_10)}$(13_10)enemy_kamikaze_fire_cool -= 1;$(13_10)random_generator = random(20);"
+/// @DnDArgument : "code" "$(13_10)hspd = hspd + facing_horizontal;$(13_10)if (hspd >= limit_short_x) or (hspd <= -limit_short_x)$(13_10){$(13_10)	hspd = hspd + (facing_horizontal/2)$(13_10)	if (hspd >= limit_long_x) or (hspd <= -limit_long_x)  $(13_10)	{$(13_10)		facing_horizontal *= -1;$(13_10)	}$(13_10)}$(13_10)$(13_10)$(13_10)y += vspd;$(13_10)x += hspd;$(13_10)$(13_10)$(13_10)if (enemy_kamikaze_fire_cool <=0)$(13_10){$(13_10)	if (enemy_kamikaze_fire_random <= random_generator)$(13_10)	{$(13_10)		var _fire = instance_create_layer(x,bbox_bottom,"Layer_bullet",o_fire_straight);$(13_10)		with (_fire)$(13_10)		{$(13_10)			bullet_team = fireteam.ENEMY;$(13_10)			bullet_preset = firepattern.HOMING;$(13_10)			image_angle = point_direction(x, y, o_Player.x, o_Player.y) - 90; $(13_10)			bullet_angle =  point_direction(x, y, o_Player.x, o_Player.y);$(13_10)			bullet_spd = (bullet_spd/2)$(13_10)		}$(13_10)		enemy_kamikaze_fire_cool = 100;$(13_10)	}$(13_10)}$(13_10)enemy_kamikaze_fire_cool -= 1;$(13_10)random_generator = random(20);"
 
 hspd = hspd + facing_horizontal;
 if (hspd >= limit_short_x) or (hspd <= -limit_short_x)
@@ -22,12 +22,14 @@ if (enemy_kamikaze_fire_cool <=0)
 {
 	if (enemy_kamikaze_fire_random <= random_generator)
 	{
-		var _fire = instance_create_layer(x,bbox_bottom,"Layer_bullet",o_fire_ball);
+		var _fire = instance_create_layer(x,bbox_bottom,"Layer_bullet",o_fire_straight);
 		with (_fire)
 		{
 			bullet_team = fireteam.ENEMY;
 			bullet_preset = firepattern.HOMING;
+			image_angle = point_direction(x, y, o_Player.x, o_Player.y) - 90; 
 			bullet_angle =  point_direction(x, y, o_Player.x, o_Player.y);
+			bullet_spd = (bullet_spd/2)
 		}
 		enemy_kamikaze_fire_cool = 100;
 	}

@@ -32,8 +32,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Bullets",
-    "path": "folders/Objects/Bullets.yy",
+    "name": "Bommerang",
+    "path": "folders/Objects/Bullets/Bommerang.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_fire_bommerang",

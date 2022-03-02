@@ -31,8 +31,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Bullets",
-    "path": "folders/Objects/Bullets.yy",
+    "name": "Straight",
+    "path": "folders/Objects/Bullets/Straight.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_fire_straight",
