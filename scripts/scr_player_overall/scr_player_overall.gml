@@ -10,7 +10,7 @@ function scr_player_overall()
 	/// @DnDHash : 565DC8B3
 	/// @DnDComment : Player Inputs$(13_10)Initial movement temp vribles$(13_10)Normal/Diagonal movements
 	/// @DnDParent : 0B0F624D
-	/// @DnDArgument : "code" "//Scripts$(13_10)$(13_10)script_execute(scr_get_input)$(13_10)$(13_10)//getting inputs$(13_10)var dhspeed = 0;$(13_10)var dvspeed = 0;$(13_10)var keyhdirection = rightkey - leftkey;$(13_10)var keyvdirection  = downkey - upkey;$(13_10)$(13_10)if (gphmove != 0) or (gpvmove != 0) $(13_10){$(13_10)	dhspeed = sign(gphmove);$(13_10)	dvspeed = sign(gpvmove);$(13_10)}$(13_10)if (keyhdirection != 0) or (keyvdirection != 0) $(13_10){$(13_10)	dhspeed = sign(keyhdirection);$(13_10)	dvspeed = sign(keyvdirection);$(13_10)}$(13_10)$(13_10)//Movement$(13_10)$(13_10)hspd = dhspeed * spd$(13_10)vspd = dvspeed * spd$(13_10)$(13_10)//Diagonal Movement$(13_10)$(13_10)if (dhspeed != 0) and (dvspeed != 0) $(13_10){$(13_10)	spd = dagspd;$(13_10)} else $(13_10){$(13_10)	spd = walkspd;$(13_10)}$(13_10)$(13_10)$(13_10)$(13_10)"
+	/// @DnDArgument : "code" "//Scripts$(13_10)$(13_10)script_execute(scr_get_input)$(13_10)$(13_10)//getting inputs$(13_10)var dhspeed = 0;$(13_10)var dvspeed = 0;$(13_10)var keyhdirection = rightkey - leftkey;$(13_10)var keyvdirection  = downkey - upkey;$(13_10)$(13_10)if (gphmove != 0) or (gpvmove != 0) $(13_10){$(13_10)	dhspeed = sign(gphmove);$(13_10)	dvspeed = sign(gpvmove);$(13_10)$(13_10)}$(13_10)if (keyhdirection != 0) or (keyvdirection != 0) $(13_10){$(13_10)	dhspeed = sign(keyhdirection);$(13_10)	dvspeed = sign(keyvdirection);$(13_10)}$(13_10)$(13_10)//Movement$(13_10)if (can_move)$(13_10){$(13_10)hspd = dhspeed * spd$(13_10)vspd = dvspeed * spd$(13_10)} else$(13_10){$(13_10)	hspd = 0$(13_10)}$(13_10)//Diagonal Movement$(13_10)$(13_10)if (dhspeed != 0) and (dvspeed != 0) $(13_10){$(13_10)	spd = dagspd;$(13_10)} else $(13_10){$(13_10)	spd = walkspd;$(13_10)}$(13_10)$(13_10)$(13_10)$(13_10)"
 	//Scripts
 	
 	script_execute(scr_get_input)
@@ -25,6 +25,7 @@ function scr_player_overall()
 	{
 		dhspeed = sign(gphmove);
 		dvspeed = sign(gpvmove);
+	
 	}
 	if (keyhdirection != 0) or (keyvdirection != 0) 
 	{
@@ -33,10 +34,14 @@ function scr_player_overall()
 	}
 	
 	//Movement
-	
+	if (can_move)
+	{
 	hspd = dhspeed * spd
 	vspd = dvspeed * spd
-	
+	} else
+	{
+		hspd = 0
+	}
 	//Diagonal Movement
 	
 	if (dhspeed != 0) and (dvspeed != 0) 
@@ -101,7 +106,7 @@ function scr_player_overall()
 	/// @DnDHash : 265E7424
 	/// @DnDComment : Player wall collision and$(13_10)final Movements
 	/// @DnDParent : 0B0F624D
-	/// @DnDArgument : "code" "// Collisions$(13_10)// HORIZONTAL collision$(13_10)$(13_10)if (place_meeting(x+hspd,y,o_wall))  // check if a theoretical move to either left or right collides with the wall$(13_10){$(13_10)	var collision = false; // if so then right now we dont know if the are colliding so collide is false$(13_10)	while (collision == false) $(13_10)	{$(13_10)		if (!place_meeting(x+sign(hspd),y,o_wall))  // check if  there not is a space between them of 1$(13_10)		{$(13_10)			x += sign(hspd);  //if there is not then move so there is $(13_10)		} else  // and if there is not the space then$(13_10)		{$(13_10)			collision = true;$(13_10)			hspd = 0; // and stop the player from moving$(13_10)		}$(13_10)	}$(13_10)}$(13_10)$(13_10)//VERTICAL collision$(13_10)if (place_meeting(x,y+vspd,o_wall)) $(13_10){$(13_10)	var collision = false;$(13_10)	while (collision == false) $(13_10)	{$(13_10)		if (!place_meeting(x,y+sign(vspd),o_wall)) $(13_10)		{$(13_10)			y += sign(vspd);   $(13_10)		} else $(13_10)		{$(13_10)			collision = true;$(13_10)			vspd = 0;$(13_10)		}$(13_10)	}$(13_10)}$(13_10)$(13_10)//Final moves the player$(13_10)x += hspd; $(13_10)y += vspd;"
+	/// @DnDArgument : "code" "// Collisions$(13_10)// HORIZONTAL collision$(13_10)$(13_10)if (place_meeting(x+hspd,y,o_wall))  // check if a theoretical move to either left or right collides with the wall$(13_10){$(13_10)	var collision = false; // if so then right now we dont know if the are colliding so collide is false$(13_10)	while (collision == false) $(13_10)	{$(13_10)		if (!place_meeting(x+sign(hspd),y,o_wall))  // check if  there not is a space between them of 1$(13_10)		{$(13_10)			x += sign(hspd);  //if there is not then move so there is $(13_10)		} else  // and if there is not the space then$(13_10)		{$(13_10)			collision = true;$(13_10)			hspd = 0; // and stop the player from moving$(13_10)		}$(13_10)	}$(13_10)}$(13_10)$(13_10)//VERTICAL collision$(13_10)if (place_meeting(x,y+vspd,o_wall)) $(13_10){$(13_10)	var collision = false;$(13_10)	while (collision == false) $(13_10)	{$(13_10)		if (!place_meeting(x,y+sign(vspd),o_wall)) $(13_10)		{$(13_10)			y += sign(vspd);   $(13_10)		} else $(13_10)		{$(13_10)			collision = true;$(13_10)			vspd = 0;$(13_10)			$(13_10)		}$(13_10)	}$(13_10)}$(13_10)$(13_10)//Final moves the player$(13_10)x += hspd; $(13_10)y += vspd;"
 	// Collisions
 	// HORIZONTAL collision
 	
@@ -134,6 +139,7 @@ function scr_player_overall()
 			{
 				collision = true;
 				vspd = 0;
+				
 			}
 		}
 	}
@@ -187,7 +193,7 @@ function scr_player_overall()
 	/// @DnDHash : 7856D4D0
 	/// @DnDComment : Player fire
 	/// @DnDParent : 0B0F624D
-	/// @DnDArgument : "code" "//Player fire$(13_10)$(13_10)if (playerfire) $(13_10){$(13_10)	if (player_fire_cool <= 0) $(13_10)	{$(13_10)		audio_sound_gain(snd_laser_fire, 1, 0);$(13_10)		audio_play_sound(snd_laser_fire,1,false);$(13_10)		instance_create_layer(x,bbox_top - 20,"Layer_bullet",o_muzzle_fire)$(13_10)		if (current_player_bullet_type == firetype.STRAIGHT) $(13_10)		{$(13_10)			if (current_upgrade_bullet == 0) $(13_10)			{$(13_10)				var _inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_straight);$(13_10)				with(_inst) $(13_10)				{$(13_10)					bullet_team = fireteam.ALLY;$(13_10)					bullet_angle = other.player_direction;$(13_10)				}$(13_10)				player_fire_cool = player_fire_short_cool;$(13_10)			}$(13_10)			if (current_upgrade_bullet == 1) $(13_10)			{$(13_10)				var _inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_straight);$(13_10)				with(_inst) $(13_10)				{$(13_10)					bullet_team = fireteam.ALLY;$(13_10)					scale = 1$(13_10)					sprite_index = spr_fire_straight_big;$(13_10)					bullet_angle = other.player_direction;$(13_10)				}$(13_10)				player_fire_cool = player_fire_medium_cool;$(13_10)			}$(13_10)			if (current_upgrade_bullet == 2) $(13_10)			{$(13_10)				var _inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_sequence_parent);$(13_10)				with(_inst) $(13_10)				{$(13_10)					bullet_team = fireteam.ALLY;$(13_10)					bullet_angle = other.player_direction;$(13_10)				}$(13_10)				player_fire_cool = player_fire_long_cool;$(13_10)			}$(13_10)			$(13_10)		}$(13_10)		if (current_player_bullet_type == firetype.BALL) $(13_10)		{$(13_10)			if (current_upgrade_bullet == 0) $(13_10)			{$(13_10)				//https://www.reddit.com/r/gamemaker/comments/9tvy3w/gms2_help_with_triple_shot_weapon/$(13_10)				var bullet_ball_direction_var = player_direction - (bullet_amont-1) * (angulo_tiro_atual/2);$(13_10)				for (var i = 0;i < bullet_amont; ++i) $(13_10)				{$(13_10)					var _inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_ball);$(13_10)					with(_inst) $(13_10)					{$(13_10)						bullet_team = fireteam.ALLY;$(13_10)						bullet_preset = firepattern.IN_LINE;$(13_10)						bullet_spd = 15;$(13_10)						bullet_angle = (bullet_ball_direction_var + (o_Player.angulo_tiro_atual * i));$(13_10)					}$(13_10)					player_fire_cool = player_fire_medium_cool;$(13_10)				}$(13_10)			}$(13_10)			if (current_upgrade_bullet == 1) $(13_10)			{$(13_10)				var _inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_explosion_grenade);$(13_10)				with(_inst) $(13_10)				{$(13_10)					bullet_team = fireteam.ALLY;$(13_10)					bullet_angle = other.player_direction;$(13_10)				}$(13_10)				player_fire_cool = player_fire_long_cool;$(13_10)			}$(13_10)			if (current_upgrade_bullet == 2)$(13_10)			{$(13_10)				var _inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_explosion_ball);$(13_10)				with(_inst) $(13_10)				{$(13_10)					bullet_team = fireteam.ALLY;$(13_10)					bullet_angle = other.player_direction;$(13_10)				}$(13_10)				player_fire_cool = player_fire_medium_cool;$(13_10)			}$(13_10)		}$(13_10)		if (current_player_bullet_type == firetype.BOMERANG)$(13_10)		{$(13_10)			if (current_upgrade_bullet == 0)$(13_10)			{$(13_10)				var _inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_bommerang);$(13_10)				with(_inst) $(13_10)				{$(13_10)					$(13_10)					bullet_team = fireteam.ALLY;$(13_10)					bullet_angle = -other.player_direction;$(13_10)					path_current = pth_bommerang_goandcome;$(13_10)					path_current_endaction = path_action_stop;$(13_10)					path_check = path_start(path_current,bullet_spd,path_current_endaction,false)$(13_10)					sprite_index = spr_fire_bommerang;$(13_10)			$(13_10)				}$(13_10)				player_fire_cool = player_fire_medium_cool - 2;$(13_10)			}$(13_10)			if (current_upgrade_bullet == 1)$(13_10)			{$(13_10)				var _inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_bommerang);$(13_10)				var _inst_2 = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_bommerang);$(13_10)				with(_inst)$(13_10)				{$(13_10)					path_current = pth_bommerang_dna;$(13_10)					bullet_team = fireteam.ALLY;$(13_10)					bullet_angle = other.player_direction;$(13_10)					path_current_endaction = path_action_stop;$(13_10)					path_check = path_start(path_current,bullet_spd_dna,path_current_endaction,false)$(13_10)					sprite_index = spr_fire_boomerang_dna;$(13_10)				}$(13_10)				with(_inst_2)$(13_10)				{$(13_10)					path_current = pth_bommerang_dna_left;$(13_10)					bullet_team = fireteam.ALLY;$(13_10)					bullet_angle = other.player_direction;$(13_10)					path_current_endaction = path_action_stop;$(13_10)					path_check = path_start(path_current,bullet_spd_dna,path_current_endaction,false)$(13_10)					sprite_index = spr_fire_boomerang_dna;$(13_10)				}$(13_10)				player_fire_cool = player_fire_medium_cool;$(13_10)			}$(13_10)			if (current_upgrade_bullet == 2)$(13_10)			{$(13_10)				var _inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_star_center_circle);$(13_10)				with (_inst)$(13_10)				{$(13_10)					bullet_team = fireteam.ALLY;$(13_10)					bullet_angle = other.player_direction;$(13_10)					var _choose =choose(-10,10)$(13_10)					for (var i = 0;i < star_amount;i++)$(13_10)					{$(13_10)						var _fire = instance_create_layer(x,y,"Layer_bullet",o_fire_star_circle);$(13_10)						star_dir += add_star_dir;$(13_10)						with (_fire)$(13_10)						{$(13_10)							angle = other.star_dir;$(13_10)							add_angle_rotation = _choose$(13_10)							star_parent_x = other.x$(13_10)							star_parent_y = other.y$(13_10)							_id = _inst.id$(13_10)						}$(13_10)		$(13_10)					}$(13_10)				}$(13_10)				player_fire_cool = player_fire_medium_cool;$(13_10)			}$(13_10)		}$(13_10)		if (current_player_bullet_type == firetype.RAYLASER)$(13_10)		{$(13_10)			if (current_upgrade_bullet == 0)$(13_10)			{$(13_10)				var _inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_ray_laser_red);$(13_10)				with (_inst)$(13_10)				{$(13_10)					bullet_team = fireteam.ALLY$(13_10)				}$(13_10)				player_fire_cool = player_fire_long_cool$(13_10)			}$(13_10)		}$(13_10)	}$(13_10)}$(13_10)$(13_10)if (player_fire_cool > 0) $(13_10){$(13_10)	player_fire_cool --;$(13_10)}"
+	/// @DnDArgument : "code" "//Player fire$(13_10)$(13_10)if (playerfire) $(13_10){$(13_10)	if (player_fire_cool <= 0) $(13_10)	{$(13_10)		audio_sound_gain(snd_laser_fire, 1, 0);$(13_10)		audio_play_sound(snd_laser_fire,1,false);$(13_10)		instance_create_layer(x,bbox_top - 20,"Layer_bullet",o_muzzle_fire)$(13_10)		if (current_player_bullet_type == firetype.STRAIGHT) $(13_10)		{$(13_10)			if (current_upgrade_bullet == 0) $(13_10)			{$(13_10)				var _inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_straight);$(13_10)				with(_inst) $(13_10)				{$(13_10)					bullet_team = fireteam.ALLY;$(13_10)					bullet_angle = other.player_direction;$(13_10)				}$(13_10)				player_fire_cool = player_fire_short_cool;$(13_10)			}$(13_10)			if (current_upgrade_bullet == 1) $(13_10)			{$(13_10)				var _inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_straight);$(13_10)				with(_inst) $(13_10)				{$(13_10)					bullet_team = fireteam.ALLY;$(13_10)					scale = 1$(13_10)					sprite_index = spr_fire_straight_big;$(13_10)					bullet_angle = other.player_direction;$(13_10)				}$(13_10)				player_fire_cool = player_fire_medium_cool;$(13_10)			}$(13_10)			if (current_upgrade_bullet == 2) $(13_10)			{$(13_10)				var _inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_sequence_parent);$(13_10)				with(_inst) $(13_10)				{$(13_10)					bullet_team = fireteam.ALLY;$(13_10)					bullet_angle = other.player_direction;$(13_10)				}$(13_10)				player_fire_cool = player_fire_long_cool;$(13_10)			}$(13_10)			$(13_10)		}$(13_10)		if (current_player_bullet_type == firetype.BALL) $(13_10)		{$(13_10)			if (current_upgrade_bullet == 0) $(13_10)			{$(13_10)				//https://www.reddit.com/r/gamemaker/comments/9tvy3w/gms2_help_with_triple_shot_weapon/$(13_10)				var bullet_ball_direction_var = player_direction - (bullet_amont-1) * (angulo_tiro_atual/2);$(13_10)				for (var i = 0;i < bullet_amont; ++i) $(13_10)				{$(13_10)					var _inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_ball);$(13_10)					with(_inst) $(13_10)					{$(13_10)						bullet_team = fireteam.ALLY;$(13_10)						bullet_preset = firepattern.IN_LINE;$(13_10)						bullet_spd = 15;$(13_10)						bullet_angle = (bullet_ball_direction_var + (o_Player.angulo_tiro_atual * i));$(13_10)					}$(13_10)					player_fire_cool = player_fire_medium_cool;$(13_10)				}$(13_10)			}$(13_10)			if (current_upgrade_bullet == 1) $(13_10)			{$(13_10)				var _inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_explosion_grenade);$(13_10)				with(_inst) $(13_10)				{$(13_10)					bullet_team = fireteam.ALLY;$(13_10)					bullet_angle = other.player_direction;$(13_10)				}$(13_10)				player_fire_cool = player_fire_long_cool;$(13_10)			}$(13_10)			if (current_upgrade_bullet == 2)$(13_10)			{$(13_10)				var _inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_explosion_ball);$(13_10)				with(_inst) $(13_10)				{$(13_10)					bullet_team = fireteam.ALLY;$(13_10)					bullet_angle = other.player_direction;$(13_10)				}$(13_10)				player_fire_cool = player_fire_medium_cool;$(13_10)			}$(13_10)		}$(13_10)		if (current_player_bullet_type == firetype.BOMERANG)$(13_10)		{$(13_10)			if (current_upgrade_bullet == 0)$(13_10)			{$(13_10)				var _inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_bommerang);$(13_10)				with(_inst) $(13_10)				{$(13_10)					$(13_10)					bullet_team = fireteam.ALLY;$(13_10)					bullet_angle = -other.player_direction;$(13_10)					path_current = pth_bommerang_goandcome;$(13_10)					path_current_endaction = path_action_stop;$(13_10)					path_check = path_start(path_current,bullet_spd,path_current_endaction,false)$(13_10)					sprite_index = spr_fire_bommerang;$(13_10)			$(13_10)				}$(13_10)				player_fire_cool = player_fire_medium_cool - 2;$(13_10)			}$(13_10)			if (current_upgrade_bullet == 1)$(13_10)			{$(13_10)				var _inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_bommerang);$(13_10)				var _inst_2 = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_bommerang);$(13_10)				with(_inst)$(13_10)				{$(13_10)					path_current = pth_bommerang_dna;$(13_10)					bullet_team = fireteam.ALLY;$(13_10)					bullet_angle = other.player_direction;$(13_10)					path_current_endaction = path_action_stop;$(13_10)					path_check = path_start(path_current,bullet_spd_dna,path_current_endaction,false)$(13_10)					sprite_index = spr_fire_boomerang_dna;$(13_10)				}$(13_10)				with(_inst_2)$(13_10)				{$(13_10)					path_current = pth_bommerang_dna_left;$(13_10)					bullet_team = fireteam.ALLY;$(13_10)					bullet_angle = other.player_direction;$(13_10)					path_current_endaction = path_action_stop;$(13_10)					path_check = path_start(path_current,bullet_spd_dna,path_current_endaction,false)$(13_10)					sprite_index = spr_fire_boomerang_dna;$(13_10)				}$(13_10)				player_fire_cool = player_fire_medium_cool;$(13_10)			}$(13_10)			if (current_upgrade_bullet == 2)$(13_10)			{$(13_10)				var _inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_star_center_circle);$(13_10)				with (_inst)$(13_10)				{$(13_10)					bullet_team = fireteam.ALLY;$(13_10)					bullet_angle = other.player_direction;$(13_10)					var _choose =choose(-10,10)$(13_10)					for (var i = 0;i < star_amount;i++)$(13_10)					{$(13_10)						var _fire = instance_create_layer(x,y,"Layer_bullet",o_fire_star_circle);$(13_10)						star_dir += add_star_dir;$(13_10)						with (_fire)$(13_10)						{$(13_10)							angle = other.star_dir;$(13_10)							add_angle_rotation = _choose$(13_10)							star_parent_x = other.x$(13_10)							star_parent_y = other.y$(13_10)							_id = _inst.id$(13_10)						}$(13_10)		$(13_10)					}$(13_10)				}$(13_10)				player_fire_cool = player_fire_medium_cool;$(13_10)			}$(13_10)		}$(13_10)		if (current_player_bullet_type == firetype.RAYLASER)$(13_10)		{$(13_10)			if (current_upgrade_bullet == 0)$(13_10)			{$(13_10)				_inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_ray_laser_red_simple);$(13_10)				with (_inst)$(13_10)					{$(13_10)						bullet_team = fireteam.ALLY$(13_10)						bullet_angle = o_Player.direction;$(13_10)						raydistance = 0$(13_10)						stop_firing = false;$(13_10)						go_with = true;$(13_10)$(13_10)					}$(13_10)			$(13_10)					player_fire_cool = 9999$(13_10)$(13_10)			}$(13_10)			if (current_upgrade_bullet == 1)$(13_10)			{$(13_10)				_inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_ray_laser_green);$(13_10)				with (_inst)$(13_10)					{$(13_10)						bullet_team = fireteam.ALLY$(13_10)						bullet_angle = o_Player.direction;$(13_10)						raydistance = 0$(13_10)						stop_firing = false;$(13_10)						go_with = false$(13_10)						sprite_bottom = spr_fire_raylaser_bottom_green$(13_10)						sprite_index = spr_fire_raylaser_body_green$(13_10)$(13_10)					}$(13_10)				player_fire_cool = player_fire_long_cool$(13_10)			}$(13_10)			if (current_upgrade_bullet == 2)$(13_10)			{$(13_10)				_inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_ray_laser_red_simple);$(13_10)				with (_inst)$(13_10)					{$(13_10)						bullet_team = fireteam.ALLY$(13_10)						bullet_angle = -o_Player.direction;$(13_10)						raydistance = 0$(13_10)						stop_firing = false;$(13_10)						go_with = true$(13_10)						sprite_bottom = spr_fire_raylaser_bottom_blue$(13_10)						sprite_index = spr_fire_raylaser_body_blue$(13_10)						time_active = 50$(13_10)						$(13_10)$(13_10)					}$(13_10)				player_fire_cool = player_fire_very_long_cool$(13_10)			}$(13_10)		}$(13_10)	}$(13_10)}$(13_10)$(13_10)$(13_10)$(13_10)if (player_fire_cool > 0) $(13_10){$(13_10)	player_fire_cool --;$(13_10)}"
 	//Player fire
 	
 	if (playerfire) 
@@ -345,16 +351,59 @@ function scr_player_overall()
 			{
 				if (current_upgrade_bullet == 0)
 				{
-					var _inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_ray_laser_red);
+					_inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_ray_laser_red_simple);
 					with (_inst)
-					{
-						bullet_team = fireteam.ALLY
-					}
+						{
+							bullet_team = fireteam.ALLY
+							bullet_angle = o_Player.direction;
+							raydistance = 0
+							stop_firing = false;
+							go_with = true;
+	
+						}
+				
+						player_fire_cool = 9999
+	
+				}
+				if (current_upgrade_bullet == 1)
+				{
+					_inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_ray_laser_green);
+					with (_inst)
+						{
+							bullet_team = fireteam.ALLY
+							bullet_angle = o_Player.direction;
+							raydistance = 0
+							stop_firing = false;
+							go_with = false
+							sprite_bottom = spr_fire_raylaser_bottom_green
+							sprite_index = spr_fire_raylaser_body_green
+	
+						}
 					player_fire_cool = player_fire_long_cool
+				}
+				if (current_upgrade_bullet == 2)
+				{
+					_inst = instance_create_layer(x,bbox_top,"Layer_bullet",o_fire_ray_laser_red_simple);
+					with (_inst)
+						{
+							bullet_team = fireteam.ALLY
+							bullet_angle = -o_Player.direction;
+							raydistance = 0
+							stop_firing = false;
+							go_with = true
+							sprite_bottom = spr_fire_raylaser_bottom_blue
+							sprite_index = spr_fire_raylaser_body_blue
+							time_active = 50
+							
+	
+						}
+					player_fire_cool = player_fire_very_long_cool
 				}
 			}
 		}
 	}
+	
+	
 	
 	if (player_fire_cool > 0) 
 	{

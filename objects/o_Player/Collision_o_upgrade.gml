@@ -1,16 +1,19 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 6885188B
-/// @DnDArgument : "code" "if (current_upgrade_bullet == 0) $(13_10){$(13_10)	current_upgrade_bullet=1$(13_10)} else if (current_upgrade_bullet == 1)$(13_10){$(13_10)	current_upgrade_bullet = 2$(13_10)} else if (current_upgrade_bullet == 2)$(13_10){$(13_10)	current_upgrade_bullet=0;$(13_10)}$(13_10)$(13_10)instance_destroy(other);"
+/// @DnDArgument : "code" "if (current_upgrade_bullet == 0) $(13_10){$(13_10)	current_upgrade_bullet=1$(13_10)	player_fire_cool = 0$(13_10)} else if (current_upgrade_bullet == 1)$(13_10){$(13_10)	current_upgrade_bullet = 2$(13_10)	player_fire_cool = 0$(13_10)} else if (current_upgrade_bullet == 2)$(13_10){$(13_10)	current_upgrade_bullet=0;$(13_10)	player_fire_cool = 0$(13_10)}$(13_10)$(13_10)instance_destroy(other);"
 if (current_upgrade_bullet == 0) 
 {
 	current_upgrade_bullet=1
+	player_fire_cool = 0
 } else if (current_upgrade_bullet == 1)
 {
 	current_upgrade_bullet = 2
+	player_fire_cool = 0
 } else if (current_upgrade_bullet == 2)
 {
 	current_upgrade_bullet=0;
+	player_fire_cool = 0
 }
 
 instance_destroy(other);

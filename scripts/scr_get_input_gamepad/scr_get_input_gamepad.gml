@@ -108,6 +108,26 @@ function scr_get_input_gamepad()
 				playerfire = true;
 			}
 		
+			/// @DnDAction : YoYo Games.Gamepad.If_Gamepad_Button_Down
+			/// @DnDVersion : 1.1
+			/// @DnDHash : 4524FBDC
+			/// @DnDParent : 0AD5E5C0
+			/// @DnDArgument : "gp" "i"
+			/// @DnDArgument : "btn" "gp_face3"
+			/// @DnDArgument : "not" "1"
+			var l4524FBDC_0 = i;
+			var l4524FBDC_1 = gp_face3;
+			if(gamepad_is_connected(l4524FBDC_0) && !(gamepad_button_check(l4524FBDC_0, l4524FBDC_1) || gamepad_button_check_released(l4524FBDC_0, l4524FBDC_1)))
+			{
+				/// @DnDAction : YoYo Games.Common.Variable
+				/// @DnDVersion : 1
+				/// @DnDHash : 1211F2DD
+				/// @DnDParent : 4524FBDC
+				/// @DnDArgument : "expr" "true"
+				/// @DnDArgument : "var" "playerfire"
+				playerfire = true;
+			}
+		
 			/// @DnDAction : YoYo Games.Loops.Break
 			/// @DnDVersion : 1
 			/// @DnDHash : 0C439EED
