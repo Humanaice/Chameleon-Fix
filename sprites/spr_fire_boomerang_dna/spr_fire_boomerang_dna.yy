@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_fire_boomerang_dna","path":"sprites/spr_fire_boomerang_dna/spr_fire_boomerang_dna.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_fire_boomerang_dna",
     "tags": [],
     "resourceType": "GMSequence",

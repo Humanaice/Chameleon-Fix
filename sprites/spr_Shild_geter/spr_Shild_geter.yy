@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_Shild_geter","path":"sprites/spr_Shild_geter/spr_Shild_geter.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_Shild_geter",
     "tags": [],
     "resourceType": "GMSequence",

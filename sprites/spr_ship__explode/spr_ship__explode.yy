@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ship__explode","path":"sprites/spr_ship__explode/spr_ship__explode.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ship__explode",
     "tags": [],
     "resourceType": "GMSequence",

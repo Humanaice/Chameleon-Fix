@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_blueship","path":"sprites/spr_player_blueship/spr_player_blueship.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_blueship",
     "tags": [],
     "resourceType": "GMSequence",

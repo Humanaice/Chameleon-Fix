@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_wall_despawn_bullets","path":"sprites/spr_wall_despawn_bullets/spr_wall_despawn_bullets.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_wall_despawn_bullets",
     "tags": [],
     "resourceType": "GMSequence",

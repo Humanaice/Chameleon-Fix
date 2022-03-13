@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_change_bullet_test","path":"sprites/spr_change_bullet_test/spr_change_bullet_test.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_change_bullet_test",
     "tags": [],
     "resourceType": "GMSequence",

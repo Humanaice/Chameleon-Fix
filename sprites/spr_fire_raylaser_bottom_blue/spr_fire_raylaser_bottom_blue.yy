@@ -115,7 +115,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_fire_raylaser_bottom_blue","path":"sprites/spr_fire_raylaser_bottom_blue/spr_fire_raylaser_bottom_blue.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_fire_raylaser_bottom_blue",
     "tags": [],
     "resourceType": "GMSequence",

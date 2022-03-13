@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_stars_pixel_background","path":"sprites/spr_stars_pixel_background/spr_stars_pixel_background.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_stars_pixel_background",
     "tags": [],
     "resourceType": "GMSequence",

@@ -25,9 +25,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"eeddc836-2c2b-45eb-a47e-d29d6d85c5c9","path":"sprites/spr_fire_explosion_shock/spr_fire_explosion_shock.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"eeddc836-2c2b-45eb-a47e-d29d6d85c5c9","path":"sprites/spr_fire_explosion_shock/spr_fire_explosion_shock.yy",},"LayerId":{"name":"1e41cba6-329b-41f0-b483-ca8b20ff8fd6","path":"sprites/spr_fire_explosion_shock/spr_fire_explosion_shock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"eeddc836-2c2b-45eb-a47e-d29d6d85c5c9","path":"sprites/spr_fire_explosion_shock/spr_fire_explosion_shock.yy",},"LayerId":{"name":"e56889d0-2749-48c6-9527-40497fb39614","path":"sprites/spr_fire_explosion_shock/spr_fire_explosion_shock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"eeddc836-2c2b-45eb-a47e-d29d6d85c5c9","path":"sprites/spr_fire_explosion_shock/spr_fire_explosion_shock.yy",},"LayerId":{"name":"2c38add6-0e7b-43de-b5d4-062475bb7739","path":"sprites/spr_fire_explosion_shock/spr_fire_explosion_shock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"eeddc836-2c2b-45eb-a47e-d29d6d85c5c9","path":"sprites/spr_fire_explosion_shock/spr_fire_explosion_shock.yy",},"LayerId":{"name":"1e41cba6-329b-41f0-b483-ca8b20ff8fd6","path":"sprites/spr_fire_explosion_shock/spr_fire_explosion_shock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_fire_explosion_shock","path":"sprites/spr_fire_explosion_shock/spr_fire_explosion_shock.yy",},"resourceVersion":"1.0","name":"eeddc836-2c2b-45eb-a47e-d29d6d85c5c9","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -61,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_fire_explosion_shock","path":"sprites/spr_fire_explosion_shock/spr_fire_explosion_shock.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_fire_explosion_shock",
     "tags": [],
     "resourceType": "GMSequence",

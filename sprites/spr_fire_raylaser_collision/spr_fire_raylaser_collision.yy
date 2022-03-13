@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_fire_raylaser_collision","path":"sprites/spr_fire_raylaser_collision/spr_fire_raylaser_collision.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_fire_raylaser_collision",
     "tags": [],
     "resourceType": "GMSequence",

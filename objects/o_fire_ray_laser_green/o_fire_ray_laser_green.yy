@@ -32,8 +32,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Bullets",
-    "path": "folders/Objects/Bullets.yy",
+    "name": "Raylaser",
+    "path": "folders/Objects/Bullets/Raylaser.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_fire_ray_laser_green",

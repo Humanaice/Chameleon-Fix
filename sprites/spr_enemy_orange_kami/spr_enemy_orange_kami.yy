@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_enemy_orange_kami","path":"sprites/spr_enemy_orange_kami/spr_enemy_orange_kami.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_enemy_orange_kami",
     "tags": [],
     "resourceType": "GMSequence",

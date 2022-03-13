@@ -375,7 +375,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_danamku_32x32","path":"sprites/spr_danamku_32x32/spr_danamku_32x32.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

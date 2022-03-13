@@ -105,7 +105,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_fire_raylaser_body_green","path":"sprites/spr_fire_raylaser_body_green/spr_fire_raylaser_body_green.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_fire_raylaser_body_green",
     "tags": [],
     "resourceType": "GMSequence",

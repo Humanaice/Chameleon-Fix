@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_fire_straight_enemy","path":"sprites/spr_fire_straight_enemy/spr_fire_straight_enemy.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_fire_straight_enemy",
     "tags": [],
     "resourceType": "GMSequence",

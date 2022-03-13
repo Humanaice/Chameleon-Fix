@@ -7,9 +7,9 @@
   "edgeFiltering": false,
   "collisionTolerance": 170,
   "swfPrecision": 2.525,
-  "bbox_left": 4,
+  "bbox_left": 0,
   "bbox_right": 43,
-  "bbox_top": 4,
+  "bbox_top": 0,
   "bbox_bottom": 41,
   "HTile": false,
   "VTile": false,
@@ -27,6 +27,9 @@
     {"compositeImage":{"FrameId":{"name":"7d1f5365-f76c-42b0-a94d-f14b2d2363b7","path":"sprites/spr_fire_ball_explosion/spr_fire_ball_explosion.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"7d1f5365-f76c-42b0-a94d-f14b2d2363b7","path":"sprites/spr_fire_ball_explosion/spr_fire_ball_explosion.yy",},"LayerId":{"name":"b69f2d69-e1dc-4d43-bdec-325df22950cb","path":"sprites/spr_fire_ball_explosion/spr_fire_ball_explosion.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_fire_ball_explosion","path":"sprites/spr_fire_ball_explosion/spr_fire_ball_explosion.yy",},"resourceVersion":"1.0","name":"7d1f5365-f76c-42b0-a94d-f14b2d2363b7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"9061c85b-c138-4d14-8acb-2f2bb21defe1","path":"sprites/spr_fire_ball_explosion/spr_fire_ball_explosion.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"9061c85b-c138-4d14-8acb-2f2bb21defe1","path":"sprites/spr_fire_ball_explosion/spr_fire_ball_explosion.yy",},"LayerId":{"name":"b69f2d69-e1dc-4d43-bdec-325df22950cb","path":"sprites/spr_fire_ball_explosion/spr_fire_ball_explosion.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_fire_ball_explosion","path":"sprites/spr_fire_ball_explosion/spr_fire_ball_explosion.yy",},"resourceVersion":"1.0","name":"9061c85b-c138-4d14-8acb-2f2bb21defe1","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_fire_ball_explosion","path":"sprites/spr_fire_ball_explosion/spr_fire_ball_explosion.yy",},
@@ -36,12 +39,13 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 2.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"5c075c51-00e6-4586-ba89-d0e16fb934da","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7d1f5365-f76c-42b0-a94d-f14b2d2363b7","path":"sprites/spr_fire_ball_explosion/spr_fire_ball_explosion.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5f361aae-8399-47bf-9c9b-e87d064c1c40","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9061c85b-c138-4d14-8acb-2f2bb21defe1","path":"sprites/spr_fire_ball_explosion/spr_fire_ball_explosion.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -59,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_fire_ball_explosion","path":"sprites/spr_fire_ball_explosion/spr_fire_ball_explosion.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_fire_ball_explosion",
     "tags": [],
     "resourceType": "GMSequence",

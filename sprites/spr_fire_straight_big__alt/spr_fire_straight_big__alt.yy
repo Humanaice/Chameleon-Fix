@@ -65,7 +65,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_fire_straight_big__alt","path":"sprites/spr_fire_straight_big__alt/spr_fire_straight_big__alt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_fire_straight_big__alt",
     "tags": [],
     "resourceType": "GMSequence",

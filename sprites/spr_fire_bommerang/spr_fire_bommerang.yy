@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_fire_bommerang","path":"sprites/spr_fire_bommerang/spr_fire_bommerang.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_fire_bommerang",
     "tags": [],
     "resourceType": "GMSequence",

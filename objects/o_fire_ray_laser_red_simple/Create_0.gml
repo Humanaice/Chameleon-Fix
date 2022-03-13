@@ -1,11 +1,11 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 3FBAAEA5
-/// @DnDArgument : "code" "bullet_team = fireteam.ALLY;$(13_10)bullet_angle = 90;$(13_10)direction = bullet_angle$(13_10)image_angle = direction;$(13_10)$(13_10)bottom_scale_x = 1;$(13_10)body_scale_x = 9;$(13_10)scale_y = 0.5;$(13_10)scale = 0.5$(13_10)image_xscale = scale$(13_10)image_yscale = scale$(13_10)image_index = 0$(13_10)$(13_10)end_x = 0;$(13_10)end_y = 0;$(13_10)dist_laser = 0;$(13_10)Xplayer = o_Player.x$(13_10)Yplayer = o_Player.y$(13_10)x = Xplayer;$(13_10)y = Yplayer;$(13_10)$(13_10)raydistance = 0$(13_10)add_raydistance_bottom = 30;$(13_10)$(13_10)image_flicker = false;$(13_10)stop_firing = false;$(13_10)time_active = 100;$(13_10)can_damage_player = false;$(13_10)$(13_10)change_x = 0$(13_10)change_y = 0$(13_10)sprite_bottom = spr_fire_raylaser_bottom_red$(13_10)//image_alpha = 0$(13_10)can_move = true;$(13_10)"
+/// @DnDArgument : "code" "bullet_team = fireteam.ALLY;$(13_10)bullet_angle = 90;$(13_10)direction = bullet_angle$(13_10)image_angle = bullet_angle;$(13_10)$(13_10)bottom_scale_x = 1;$(13_10)body_scale_x = 9;$(13_10)scale_y = 0.5;$(13_10)scale = 0.5$(13_10)image_xscale = scale$(13_10)image_yscale = scale$(13_10)image_index = 0$(13_10)$(13_10)end_x = 0;$(13_10)end_y = 0;$(13_10)dist_laser = 0;$(13_10)Xplayer = o_Player.x$(13_10)Yplayer = o_Player.y$(13_10)x = Xplayer;$(13_10)y = Yplayer;$(13_10)$(13_10)raydistance = 0$(13_10)add_raydistance_bottom = 30;$(13_10)$(13_10)image_flicker = false;$(13_10)stop_firing = false;$(13_10)time_active = 100;$(13_10)can_damage_player = false;$(13_10)$(13_10)change_x = 0$(13_10)change_y = 0$(13_10)sprite_bottom = spr_fire_raylaser_bottom_red$(13_10)//image_alpha = 0$(13_10)can_move = true;$(13_10)$(13_10)if (o_Player.current_upgrade_bullet == 0)$(13_10){$(13_10)	image_angle = bullet_angle;$(13_10)}$(13_10)else if (o_Player.current_upgrade_bullet == 2)$(13_10){$(13_10)	image_angle = -bullet_angle;$(13_10)}$(13_10)"
 bullet_team = fireteam.ALLY;
 bullet_angle = 90;
 direction = bullet_angle
-image_angle = direction;
+image_angle = bullet_angle;
 
 bottom_scale_x = 1;
 body_scale_x = 9;
@@ -36,3 +36,12 @@ change_y = 0
 sprite_bottom = spr_fire_raylaser_bottom_red
 //image_alpha = 0
 can_move = true;
+
+if (o_Player.current_upgrade_bullet == 0)
+{
+	image_angle = bullet_angle;
+}
+else if (o_Player.current_upgrade_bullet == 2)
+{
+	image_angle = -bullet_angle;
+}

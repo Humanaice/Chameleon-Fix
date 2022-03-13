@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_fire_sequence_kid","path":"sprites/spr_fire_sequence_kid/spr_fire_sequence_kid.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_fire_sequence_kid",
     "tags": [],
     "resourceType": "GMSequence",

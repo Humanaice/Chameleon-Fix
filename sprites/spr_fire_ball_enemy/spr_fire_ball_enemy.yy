@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_fire_ball_enemy","path":"sprites/spr_fire_ball_enemy/spr_fire_ball_enemy.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_fire_ball_enemy",
     "tags": [],
     "resourceType": "GMSequence",

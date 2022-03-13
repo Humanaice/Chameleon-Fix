@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_upgrade_health","path":"sprites/spr_upgrade_health/spr_upgrade_health.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_upgrade_health",
     "tags": [],
     "resourceType": "GMSequence",

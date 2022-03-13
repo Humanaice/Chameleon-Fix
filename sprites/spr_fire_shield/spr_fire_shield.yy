@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_fire_shield","path":"sprites/spr_fire_shield/spr_fire_shield.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_fire_shield",
     "tags": [],
     "resourceType": "GMSequence",

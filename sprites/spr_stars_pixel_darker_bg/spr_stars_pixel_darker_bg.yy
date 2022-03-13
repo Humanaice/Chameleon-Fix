@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_stars_pixel_darker_bg","path":"sprites/spr_stars_pixel_darker_bg/spr_stars_pixel_darker_bg.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_stars_pixel_darker_bg",
     "tags": [],
     "resourceType": "GMSequence",
