@@ -37,11 +37,11 @@ enemy_preset_1_spawn_cool = 0;
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 27390B90
-/// @DnDArgument : "code" "clock_initial = 0$(13_10)global.clock = 0$(13_10)enemy_kamikaze_clock = 0$(13_10)enemys_to_create = 0;"
+/// @DnDArgument : "code" "clock_initial = 0$(13_10)global.clock = 0$(13_10)enemy_kamikaze_clock = 0$(13_10)enemys_to_create = 10;"
 clock_initial = 0
 global.clock = 0
 enemy_kamikaze_clock = 0
-enemys_to_create = 0;
+enemys_to_create = 10;
 
 /// @DnDAction : YoYo Games.Audio.Play_Audio
 /// @DnDVersion : 1

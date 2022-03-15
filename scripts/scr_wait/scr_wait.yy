@@ -1,12 +1,12 @@
 {
-  "isDnD": true,
+  "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "WaitFunctions",
+    "path": "folders/WaitFunctions.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Script6",
+  "name": "scr_wait",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -12,8 +12,8 @@
     {"speed":100.0,"x":512.0,"y":352.0,},
   ],
   "parent": {
-    "name": "Paths",
-    "path": "folders/Paths.yy",
+    "name": "Bullets",
+    "path": "folders/Paths/Bullets.yy",
   },
   "resourceVersion": "1.0",
   "name": "pth_bommerang_dna_left",
