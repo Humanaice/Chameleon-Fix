@@ -1,10 +1,18 @@
 
+image_angle = direction - 90
 
-
-
-if (path_position >= 1)
+switch enemy_state
 {
-	if (!fire_it_once)
+	case enemystate.ENTERING:
+	{
+		if (path_position == 1)
+		{
+			enemy_state = enemystate.SHOTTING;
+		}
+		
+		break;
+	}
+	case enemystate.SHOTTING:
 	{
 		if (cool_fire <= 0)
 		{
@@ -13,20 +21,24 @@ if (path_position >= 1)
 			{
 				bullet_team = fireteam.ENEMY
 				enemy_id = other.id
+				sprite_bottom = spr_fire_raylaser_bottom_grey
+				sprite_index = spr_fire_raylaser_body_grey
 				bullet_angle = -90;
 				image_angle = -90
+				x = other.x
+				y = other.y
 				raydistance = 0
 				stop_firing = false;
 				go_with = true
-				sprite_bottom = spr_fire_raylaser_bottom_red
-				sprite_index = spr_fire_raylaser_body_red
 				time_active = 100
 				bullet_type = 0
 			} 
-			fire_it_once = true
+			enemy_state = enemystate.FLEEING;
 		}
 		cool_fire -= 1;
-	} else
+		break;
+	}
+	case enemystate.FLEEING:
 	{
 		if (!instance_exists(_inst))
 		{
@@ -42,10 +54,9 @@ if (path_position >= 1)
 				}
 			}
 		}
+		break;
 	}
 }
-image_angle = -180
-
 
 
 

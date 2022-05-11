@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_fire_ball_grenade",
-    "path": "sprites/spr_fire_ball_grenade/spr_fire_ball_grenade.yy",
+    "name": "spr_fire_ball_grenade_player",
+    "path": "sprites/spr_fire_ball_grenade_player/spr_fire_ball_grenade_player.yy",
   },
   "solid": false,
   "visible": true,

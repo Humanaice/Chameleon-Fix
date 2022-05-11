@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_fire_ball_explosion",
-    "path": "sprites/spr_fire_ball_explosion/spr_fire_ball_explosion.yy",
+    "name": "spr_fire_ball_explosion_player",
+    "path": "sprites/spr_fire_ball_explosion_player/spr_fire_ball_explosion_player.yy",
   },
   "solid": false,
   "visible": true,
