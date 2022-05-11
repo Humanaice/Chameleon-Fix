@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_fire_shield",
-    "path": "sprites/spr_fire_shield/spr_fire_shield.yy",
+    "name": "spr_fire_ball",
+    "path": "sprites/spr_fire_ball/spr_fire_ball.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,21 +24,19 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":true,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":true,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":true,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":true,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_enemy_parent","path":"objects/o_enemy_parent/o_enemy_parent.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":true,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_bullet_parent","path":"objects/o_bullet_parent/o_bullet_parent.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":true,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_fire_dna","path":"objects/o_fire_dna/o_fire_dna.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":true,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_fire_bommerang","path":"objects/o_fire_bommerang/o_fire_bommerang.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":true,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_Player","path":"objects/o_Player/o_Player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Bullets",
-    "path": "folders/Objects/Bullets.yy",
+    "name": "Ball",
+    "path": "folders/Objects/Bullets/Ball.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_shield",
+  "name": "o_fire_ball_triple",
   "tags": [],
   "resourceType": "GMObject",
 }
