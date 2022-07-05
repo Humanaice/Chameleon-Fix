@@ -9,7 +9,7 @@
 instance_create_layer(other.x, other.y, "Layer_effects", o_explosion);
 
 /// @DnDAction : YoYo Games.Audio.Audio_Set_Volume
-/// @DnDVersion : 1
+/// @DnDVersion : 1.1
 /// @DnDHash : 5B38F902
 /// @DnDArgument : "sound" "sf_laser_explosion"
 /// @DnDArgument : "volume" "2"

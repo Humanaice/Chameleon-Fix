@@ -1,10 +1,11 @@
 {
   "spriteId": {
-    "name": "spr_spsh_enemy_red_raylaser",
-    "path": "sprites/spr_spsh_enemy_red_raylaser/spr_spsh_enemy_red_raylaser.yy",
+    "name": "spr_spsh_enemy_red_complete",
+    "path": "sprites/spr_spsh_enemy_red_complete/spr_spsh_enemy_red_complete.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {

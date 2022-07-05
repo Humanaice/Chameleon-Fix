@@ -2,7 +2,6 @@
 /// @DnDVersion : 1.1
 /// @DnDHash : 07440F67
 /// @DnDArgument : "script" "scr_player_overall"
-/// @DnDSaveInfo : "script" "scr_player_overall"
 script_execute(scr_player_overall);
 
 /// @DnDAction : YoYo Games.Switch.Switch
@@ -22,7 +21,6 @@ script_execute(scr_player_overall);
 /// @DnDDisabled : 1
 /// @DnDParent : 7DD8CB42
 /// @DnDArgument : "script" "scr_player_overall"
-/// @DnDSaveInfo : "script" "scr_player_overall"
 
 /// @DnDAction : YoYo Games.Switch.Case
 /// @DnDVersion : 1
@@ -36,7 +34,6 @@ script_execute(scr_player_overall);
 /// @DnDDisabled : 1
 /// @DnDParent : 5AF064BF
 /// @DnDArgument : "script" "scr_player_overall"
-/// @DnDSaveInfo : "script" "scr_player_overall"
 
 /// @DnDAction : YoYo Games.Switch.Case
 /// @DnDVersion : 1
@@ -50,7 +47,6 @@ script_execute(scr_player_overall);
 /// @DnDDisabled : 1
 /// @DnDParent : 7EDC561F
 /// @DnDArgument : "script" "scr_player_overall"
-/// @DnDSaveInfo : "script" "scr_player_overall"
 
 /// @DnDAction : YoYo Games.Switch.Case
 /// @DnDVersion : 1

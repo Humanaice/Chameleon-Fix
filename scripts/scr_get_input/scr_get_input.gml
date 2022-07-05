@@ -26,7 +26,6 @@ function scr_get_input()
 	/// @DnDHash : 68A55120
 	/// @DnDParent : 624B9495
 	/// @DnDArgument : "script" "scr_get_input_gamepad"
-	/// @DnDSaveInfo : "script" "scr_get_input_gamepad"
 	script_execute(scr_get_input_gamepad);
 
 	/// @DnDAction : YoYo Games.Common.Execute_Code

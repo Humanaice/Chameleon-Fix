@@ -14,7 +14,7 @@ if(!(bullet_team == fireteam.ENEMY))
 	with(other) instance_destroy();
 
 	/// @DnDAction : YoYo Games.Audio.Audio_Set_Volume
-	/// @DnDVersion : 1
+	/// @DnDVersion : 1.1
 	/// @DnDHash : 17C62A82
 	/// @DnDParent : 7CA8D9BB
 	/// @DnDArgument : "sound" "sf_laser_explosion"
