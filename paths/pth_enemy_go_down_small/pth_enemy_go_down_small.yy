@@ -9,8 +9,8 @@
     {"speed":50.0,"x":224.0,"y":32.0,},
   ],
   "parent": {
-    "name": "Enemys",
-    "path": "folders/Paths/Enemys.yy",
+    "name": "Entering",
+    "path": "folders/Paths/Enemys/Entering.yy",
   },
   "resourceVersion": "1.0",
   "name": "pth_enemy_go_down_small",

@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.49,
+  "volume": 0.12,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "Anamana_Akira.mp3",
-  "duration": 211.200089,
+  "duration": 211.20009,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

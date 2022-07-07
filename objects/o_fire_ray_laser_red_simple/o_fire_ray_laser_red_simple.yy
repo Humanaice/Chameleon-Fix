@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_fire_raylaser_body_red",
     "path": "sprites/spr_fire_raylaser_body_red/spr_fire_raylaser_body_red.yy",

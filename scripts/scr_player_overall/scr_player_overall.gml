@@ -192,7 +192,7 @@ function scr_player_overall()
 	/// @DnDVersion : 1
 	/// @DnDHash : 6282F419
 	/// @DnDParent : 0B0F624D
-	/// @DnDArgument : "code" "if (playerfire) $(13_10){$(13_10)	if (player_fire_cool <= 0) $(13_10)	{$(13_10)$(13_10)		var _inst0 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[0]);$(13_10)		var _inst1 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[1]);$(13_10)		var _inst2 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[2]);$(13_10)		with(_inst0) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)			}$(13_10)		with(_inst1) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)			}$(13_10)		with(_inst2) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)			}$(13_10)		player_fire_cool = player_fire_short_cool$(13_10)	}$(13_10)}$(13_10)$(13_10)if (player_fire_cool > 0) $(13_10){$(13_10)	player_fire_cool --;$(13_10)}"
+	/// @DnDArgument : "code" "if (playerfire) $(13_10){$(13_10)	if (player_fire_cool <= 0) $(13_10)	{$(13_10)$(13_10)		var _inst0 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[0]);$(13_10)		var _inst1 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[1]);$(13_10)		var _inst2 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[2]);$(13_10)		with(_inst0) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)				creator = o_Player$(13_10)			}$(13_10)		with(_inst1) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)				creator = o_Player$(13_10)			}$(13_10)		with(_inst2) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)				creator = o_Player$(13_10)			}$(13_10)		player_fire_cool = player_fire_short_cool$(13_10)	}$(13_10)}$(13_10)$(13_10)if (player_fire_cool > 0) $(13_10){$(13_10)	player_fire_cool --;$(13_10)}"
 	if (playerfire) 
 	{
 		if (player_fire_cool <= 0) 
@@ -205,16 +205,19 @@ function scr_player_overall()
 				{
 					bullet_team = fireteam.ALLY;
 					bullet_angle = other.player_direction;
+					creator = o_Player
 				}
 			with(_inst1) 
 				{
 					bullet_team = fireteam.ALLY;
 					bullet_angle = other.player_direction;
+					creator = o_Player
 				}
 			with(_inst2) 
 				{
 					bullet_team = fireteam.ALLY;
 					bullet_angle = other.player_direction;
+					creator = o_Player
 				}
 			player_fire_cool = player_fire_short_cool
 		}

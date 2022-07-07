@@ -24,8 +24,8 @@
     {"speed":120.0,"x":288.0,"y":1280.0,},
   ],
   "parent": {
-    "name": "Enemys",
-    "path": "folders/Paths/Enemys.yy",
+    "name": "Leaving",
+    "path": "folders/Paths/Enemys/Leaving.yy",
   },
   "resourceVersion": "1.0",
   "name": "pth_enemy_GoDown",

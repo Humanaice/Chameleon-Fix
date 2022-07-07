@@ -1,9 +1,12 @@
-/// @DnDAction : YoYo Games.Instances.Create_Instance
+/// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
-/// @DnDHash : 39D6688B
-/// @DnDArgument : "xpos_relative" "1"
-/// @DnDArgument : "ypos_relative" "1"
-/// @DnDArgument : "objectid" "o_fire_explosion_shock"
-/// @DnDArgument : "layer" ""Layer_bullet""
-/// @DnDSaveInfo : "objectid" "o_fire_explosion_shock"
-instance_create_layer(x + 0, y + 0, "Layer_bullet", o_fire_explosion_shock);
+/// @DnDHash : 2DD394C6
+/// @DnDArgument : "code" "/// @description Execute Code$(13_10)var _bullet = instance_create_layer(x,y,"Layer_bullet",o_fire_ball)$(13_10)with (_bullet)$(13_10){$(13_10)	bullet_team = other.bullet_team$(13_10)	sprite_index = other.sprite_index;$(13_10)			$(13_10)}$(13_10)$(13_10)$(13_10)"
+/// @description Execute Code
+var _bullet = instance_create_layer(x,y,"Layer_bullet",o_fire_ball)
+with (_bullet)
+{
+	bullet_team = other.bullet_team
+	sprite_index = other.sprite_index;
+			
+}
