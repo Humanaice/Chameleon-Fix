@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_fire_ball",
-    "path": "sprites/spr_fire_ball/spr_fire_ball.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

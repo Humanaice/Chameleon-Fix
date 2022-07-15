@@ -35,3 +35,9 @@ function go_down ()
 	speed = 10
 	
 }
+
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 78B698ED
+/// @DnDDisabled : 1
+/// @DnDArgument : "code" "/// @description Execute Code$(13_10)function enemy_dna_movement()$(13_10){$(13_10)	var limit_short_x = 5$(13_10)	var limit_long_x = 10$(13_10)	enemy_hspd = enemy_hspd + facing_horizontal;$(13_10)	if (enemy_hspd >= limit_short_x) or (enemy_hspd <= -limit_short_x)$(13_10)	{$(13_10)		enemy_hspd = enemy_hspd + (facing_horizontal/2)$(13_10)		if (enemy_hspd >= limit_long_x) or (enemy_hspd <= -limit_long_x)  $(13_10)		{$(13_10)			facing_horizontal *= -1;$(13_10)		}$(13_10)	}$(13_10)}$(13_10)$(13_10)function enemy_dna_movement_horizontal()$(13_10){$(13_10)	var limit_short_y = 5$(13_10)	var limit_long_y = 10$(13_10)	enemy_vspd = enemy_vspd + facing_horizontal;$(13_10)	enemy_hspd = 5$(13_10)	if (enemy_vspd >= limit_short_y) or (enemy_vspd <= -limit_short_y)$(13_10)	{$(13_10)		enemy_vspd = enemy_vspd + (facing_horizontal/2)$(13_10)		if (enemy_vspd >= limit_long_y) or (enemy_vspd <= -limit_long_y)  $(13_10)		{$(13_10)			facing_horizontal *= -1;$(13_10)		}$(13_10)	}$(13_10)}$(13_10)$(13_10)function teest()$(13_10){$(13_10)	enemy_vspd -= 1$(13_10)}$(13_10)$(13_10)$(13_10)"

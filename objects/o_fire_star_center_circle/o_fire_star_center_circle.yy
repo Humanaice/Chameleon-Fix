@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_fire_boomerang_dna31",
-    "path": "sprites/spr_fire_boomerang_dna31/spr_fire_boomerang_dna31.yy",
+    "name": "spr_fire_homing",
+    "path": "sprites/spr_fire_homing/spr_fire_homing.yy",
   },
   "solid": false,
   "visible": true,

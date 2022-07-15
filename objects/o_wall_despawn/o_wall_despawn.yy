@@ -26,7 +26,6 @@
     {"isDnD":true,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_bullet_parent","path":"objects/o_bullet_parent/o_bullet_parent.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":true,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_fire_star_center_circle","path":"objects/o_fire_star_center_circle/o_fire_star_center_circle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":true,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_fire_ray_laser_red_simple","path":"objects/o_fire_ray_laser_red_simple/o_fire_ray_laser_red_simple.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":true,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_enemy_kamikaze","path":"objects/o_enemy_kamikaze/o_enemy_kamikaze.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
