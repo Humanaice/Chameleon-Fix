@@ -153,8 +153,10 @@ function scr_player_overall()
 	/// @DnDHash : 188652F5
 	/// @DnDComment : Hp
 	/// @DnDParent : 0B0F624D
-	/// @DnDArgument : "code" "// HP$(13_10)$(13_10)if (hpcooldown > 0) $(13_10){$(13_10)	hpcooldown --;$(13_10)}$(13_10)$(13_10)if (hpcooldown <= 0) $(13_10){$(13_10)	player_damaged = false;$(13_10)}"
+	/// @DnDArgument : "code" "// HP$(13_10)$(13_10)hp_now = hp_now$(13_10)$(13_10)if (hpcooldown > 0) $(13_10){$(13_10)	hpcooldown --;$(13_10)}$(13_10)$(13_10)if (hpcooldown <= 0) $(13_10){$(13_10)	player_damaged = false;$(13_10)}$(13_10)"
 	// HP
+	
+	hp_now = hp_now
 	
 	if (hpcooldown > 0) 
 	{
@@ -171,7 +173,7 @@ function scr_player_overall()
 	/// @DnDHash : 290BBA86
 	/// @DnDComment : States$(13_10)
 	/// @DnDParent : 0B0F624D
-	/// @DnDArgument : "code" "// Checking States$(13_10)if (dashing) $(13_10){$(13_10)	state = playerstate.DASHING;$(13_10)} else if (!hspd = 0) or (!vspd = 0) $(13_10){$(13_10)	state = playerstate.MOVING;$(13_10)} else if (hspd = 0) or (vspd = 0) $(13_10){$(13_10)	state = playerstate.IDLE;$(13_10)}$(13_10)if (hpcurrent == 0) $(13_10){$(13_10)	state = playerstate.DEAD;$(13_10)}"
+	/// @DnDArgument : "code" "// Checking States$(13_10)if (dashing) $(13_10){$(13_10)	state = playerstate.DASHING;$(13_10)} else if (!hspd = 0) or (!vspd = 0) $(13_10){$(13_10)	state = playerstate.MOVING;$(13_10)} else if (hspd = 0) or (vspd = 0) $(13_10){$(13_10)	state = playerstate.IDLE;$(13_10)}$(13_10)$(13_10)if (hpcurrent == 0) $(13_10){$(13_10)	state = playerstate.DEAD;$(13_10)}$(13_10)"
 	// Checking States
 	if (dashing) 
 	{
@@ -183,6 +185,7 @@ function scr_player_overall()
 	{
 		state = playerstate.IDLE;
 	}
+	
 	if (hpcurrent == 0) 
 	{
 		state = playerstate.DEAD;
@@ -192,7 +195,7 @@ function scr_player_overall()
 	/// @DnDVersion : 1
 	/// @DnDHash : 6282F419
 	/// @DnDParent : 0B0F624D
-	/// @DnDArgument : "code" "if (playerfire) $(13_10){$(13_10)	if (player_fire_cool <= 0) $(13_10)	{$(13_10)$(13_10)		var _inst0 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[0]);$(13_10)		var _inst1 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[1]);$(13_10)		var _inst2 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[2]);$(13_10)		with(_inst0) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)				creator = o_Player$(13_10)			}$(13_10)		with(_inst1) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)				creator = o_Player$(13_10)			}$(13_10)		with(_inst2) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)				creator = o_Player$(13_10)			}$(13_10)		player_fire_cool = player_fire_short_cool$(13_10)	}$(13_10)}$(13_10)$(13_10)if (player_fire_cool > 0) $(13_10){$(13_10)	player_fire_cool --;$(13_10)}"
+	/// @DnDArgument : "code" "if (playerfire) $(13_10){$(13_10)	if (player_fire_cool <= 0) $(13_10)	{$(13_10)$(13_10)		var _inst0 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[0]);$(13_10)		var _inst1 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[1]);$(13_10)		var _inst2 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[2]);$(13_10)		with(_inst0) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)				creator = o_Player$(13_10)			}$(13_10)		with(_inst1) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)				creator = o_Player$(13_10)			}$(13_10)		with(_inst2) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)				creator = o_Player$(13_10)			}$(13_10)		player_fire_cool = player_fire_short_cool$(13_10)	}$(13_10)}$(13_10)$(13_10)if (player_fire_cool > 0) $(13_10){$(13_10)	player_fire_cool --;$(13_10)}$(13_10)"
 	if (playerfire) 
 	{
 		if (player_fire_cool <= 0) 

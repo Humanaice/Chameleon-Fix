@@ -1,7 +1,7 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 7C8A48CA
-/// @DnDArgument : "code" "if (can_move)$(13_10){$(13_10)	y += 2.5$(13_10)}$(13_10)$(13_10)image_xscale = scale;$(13_10)image_yscale = scale;$(13_10)$(13_10)$(13_10)if (upgrade_type == firetype.STRAIGHT)$(13_10){$(13_10)	sprite_index = sprite_upgrade$(13_10)	image_index = 0$(13_10)	$(13_10)} else if (upgrade_type == firetype.BIG_STRAIGHT)$(13_10){$(13_10)	sprite_index = sprite_upgrade$(13_10)	image_index = 3$(13_10)	$(13_10)}else if (upgrade_type == firetype.SEQUENCE)$(13_10){$(13_10)	sprite_index = sprite_upgrade$(13_10)	image_index = 6$(13_10)	$(13_10)}else if (upgrade_type == firetype.BALL)$(13_10){$(13_10)	sprite_index = sprite_upgrade$(13_10)	image_index = 1$(13_10)	$(13_10)}else if (upgrade_type == firetype.TRIPLE_BALL)$(13_10){$(13_10)	sprite_index = sprite_upgrade$(13_10)	image_index = 1$(13_10)	$(13_10)}else if (upgrade_type == firetype.GRANADE)$(13_10){$(13_10)	sprite_index = sprite_upgrade$(13_10)	image_index = 4$(13_10)	$(13_10)}else if (upgrade_type == firetype.BALL_GRANADE)$(13_10){$(13_10)	sprite_index = sprite_upgrade$(13_10)	image_index = 7$(13_10)$(13_10)}else if (upgrade_type == firetype.BOMERANG)$(13_10){$(13_10)	sprite_index = sprite_upgrade$(13_10)	image_index = 2$(13_10)$(13_10)}else if (upgrade_type == firetype.DNA)$(13_10){$(13_10)	sprite_index = sprite_upgrade$(13_10)	image_index = 5$(13_10)$(13_10)}else if (upgrade_type == firetype.HOMING)$(13_10){$(13_10)	sprite_index = sprite_upgrade$(13_10)	image_index = 8$(13_10)$(13_10)}else if (upgrade_type == firetype.RAYLASER)$(13_10){$(13_10)	sprite_index = sprite_upgrade$(13_10)	image_index = 0$(13_10)$(13_10)}$(13_10)$(13_10)if (can_move)$(13_10){$(13_10)	y += 2.5$(13_10)}$(13_10)image_xscale = scale;$(13_10)image_yscale = scale;$(13_10)$(13_10)"
+/// @DnDArgument : "code" "if (can_move)$(13_10){$(13_10)	y += 2.5$(13_10)}$(13_10)$(13_10)image_xscale = scale;$(13_10)image_yscale = scale;$(13_10)$(13_10)$(13_10)if (upgrade_type == firetype.STRAIGHT)$(13_10){$(13_10)	sprite_index = sprite_upgrade$(13_10)	image_index = 0$(13_10)	$(13_10)} else if (upgrade_type == firetype.BIG_STRAIGHT)$(13_10){$(13_10)	sprite_index = sprite_upgrade$(13_10)	image_index = 3$(13_10)	$(13_10)}else if (upgrade_type == firetype.SEQUENCE)$(13_10){$(13_10)	sprite_index = sprite_upgrade$(13_10)	image_index = 6$(13_10)	$(13_10)}else if (upgrade_type == firetype.BALL)$(13_10){$(13_10)	sprite_index = sprite_upgrade$(13_10)	image_index = 1$(13_10)	$(13_10)}else if (upgrade_type == firetype.TRIPLE_BALL)$(13_10){$(13_10)	sprite_index = sprite_upgrade$(13_10)	image_index = 1$(13_10)	$(13_10)}else if (upgrade_type == firetype.GRANADE)$(13_10){$(13_10)	sprite_index = sprite_upgrade$(13_10)	image_index = 4$(13_10)	$(13_10)}else if (upgrade_type == firetype.BALL_GRANADE)$(13_10){$(13_10)	sprite_index = sprite_upgrade$(13_10)	image_index = 7$(13_10)$(13_10)}else if (upgrade_type == firetype.BOMERANG)$(13_10){$(13_10)	sprite_index = sprite_upgrade$(13_10)	image_index = 2$(13_10)$(13_10)}else if (upgrade_type == firetype.DNA)$(13_10){$(13_10)	sprite_index = sprite_upgrade$(13_10)	image_index = 5$(13_10)$(13_10)}else if (upgrade_type == firetype.HOMING)$(13_10){$(13_10)	sprite_index = sprite_upgrade$(13_10)	image_index = 8$(13_10)$(13_10)}$(13_10)$(13_10)$(13_10)$(13_10)"
 if (can_move)
 {
 	y += 2.5
@@ -61,16 +61,4 @@ if (upgrade_type == firetype.STRAIGHT)
 	sprite_index = sprite_upgrade
 	image_index = 8
 
-}else if (upgrade_type == firetype.RAYLASER)
-{
-	sprite_index = sprite_upgrade
-	image_index = 0
-
 }
-
-if (can_move)
-{
-	y += 2.5
-}
-image_xscale = scale;
-image_yscale = scale;

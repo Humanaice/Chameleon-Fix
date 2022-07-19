@@ -2,11 +2,11 @@
   "isDnD": true,
   "isCompatibility": false,
   "parent": {
-    "name": "random",
-    "path": "folders/Scripts/random.yy",
+    "name": "EnemyCreation",
+    "path": "folders/Scripts/EnemyCreation.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Script9",
+  "name": "scr_enemy_type",
   "tags": [],
   "resourceType": "GMScript",
 }

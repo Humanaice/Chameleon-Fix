@@ -8,11 +8,10 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 4135568C
-/// @DnDArgument : "code" "/// @description Execute Code$(13_10)$(13_10)image_angle = direction - 90$(13_10)$(13_10)$(13_10)switch enemy_state$(13_10){$(13_10)	case enemystate.ENTERING:$(13_10)	$(13_10)		if (path_position >= 1)$(13_10)		{$(13_10)			enemy_state = enemystate.MOVING;$(13_10)			//enemy_state = enemystate.ENTERING$(13_10)		} else$(13_10)		{$(13_10)			enemy_state = enemystate.ENTERING$(13_10)		}$(13_10)		$(13_10)	break;$(13_10)	$(13_10)	case enemystate.MOVING:$(13_10)	$(13_10)		if (!infy_path)$(13_10)		{$(13_10)			y += enemy_vspd$(13_10)			x += enemy_hspd		$(13_10)		}else$(13_10)		{$(13_10)			if(can_start_path)$(13_10)			{$(13_10)				path_start(infy_path_choose,5,path_action_restart,false)$(13_10)				can_start_path = false$(13_10)			}else$(13_10)			{$(13_10)				direction = - 90$(13_10)				image_angle = direction - 90$(13_10)			}$(13_10)		}$(13_10)						$(13_10)		if (can_shoot)$(13_10)		{$(13_10)			if (shoot_once)$(13_10)			{$(13_10)				if (cool_fire <= 0)$(13_10)				{$(13_10)					script_execute(scr_fire_enemy_bullet)$(13_10)					can_shoot = false$(13_10)				}$(13_10)			} else$(13_10)			{$(13_10)				if (cool_fire <= 0)$(13_10)				{$(13_10)					script_execute(scr_fire_enemy_bullet)$(13_10)					cool_fire = cooldown$(13_10)				}$(13_10)				cool_fire -= 1;$(13_10)			}$(13_10)		}$(13_10)		break$(13_10)	$(13_10)}$(13_10)	$(13_10)	$(13_10)$(13_10)$(13_10)$(13_10)"
+/// @DnDArgument : "code" "/// @description Execute Code$(13_10)$(13_10)image_angle = direction - 90$(13_10)$(13_10)switch enemy_state$(13_10){$(13_10)	case enemystate.ENTERING:$(13_10)	$(13_10)		if (path_position >= 1)$(13_10)		{$(13_10)			enemy_state = enemystate.MOVING;$(13_10)			//enemy_state = enemystate.ENTERING$(13_10)		} else$(13_10)		{$(13_10)			enemy_state = enemystate.ENTERING$(13_10)		}$(13_10)		$(13_10)	break;$(13_10)	$(13_10)	case enemystate.MOVING:$(13_10)	$(13_10)		if (!infy_path)$(13_10)		{$(13_10)			y += enemy_vspd$(13_10)			x += enemy_hspd		$(13_10)		}else$(13_10)		{$(13_10)			if(can_start_path)$(13_10)			{$(13_10)				path_start(infy_path_choose,5,path_action_restart,false)$(13_10)				can_start_path = false$(13_10)			}else$(13_10)			{$(13_10)				direction = -90$(13_10)				image_angle = direction - 90$(13_10)			}$(13_10)		}$(13_10)						$(13_10)		if (can_shoot)$(13_10)		{$(13_10)			if (shoot_once)$(13_10)			{$(13_10)				if (cool_fire <= 0)$(13_10)				{$(13_10)					script_execute(scr_fire_enemy_bullet)$(13_10)					can_shoot = false$(13_10)				}$(13_10)			} else$(13_10)			{$(13_10)				if (cool_fire <= 0)$(13_10)				{$(13_10)					script_execute(scr_fire_enemy_bullet)$(13_10)					cool_fire = cooldown$(13_10)				}$(13_10)				cool_fire -= 1;$(13_10)			}$(13_10)		}$(13_10)		break$(13_10)	$(13_10)}$(13_10)	$(13_10)	$(13_10)$(13_10)$(13_10)$(13_10)"
 /// @description Execute Code
 
 image_angle = direction - 90
-
 
 switch enemy_state
 {
@@ -43,7 +42,7 @@ switch enemy_state
 				can_start_path = false
 			}else
 			{
-				direction = - 90
+				direction = -90
 				image_angle = direction - 90
 			}
 		}

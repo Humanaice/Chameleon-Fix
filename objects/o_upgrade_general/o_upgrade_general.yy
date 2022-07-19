@@ -3,7 +3,10 @@
   "solid": false,
   "visible": true,
   "managed": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "powerupBlue",
+    "path": "sprites/powerupBlue/powerupBlue.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
