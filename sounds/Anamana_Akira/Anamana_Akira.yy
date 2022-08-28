@@ -14,8 +14,8 @@
   "soundFile": "Anamana_Akira.mp3",
   "duration": 211.20009,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
   "resourceVersion": "1.0",
   "name": "Anamana_Akira",

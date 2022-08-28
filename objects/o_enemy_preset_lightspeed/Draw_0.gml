@@ -1,9 +1,7 @@
-/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDAction : YoYo Games.Instances.Inherit_Event
 /// @DnDVersion : 1
-/// @DnDHash : 756D9D08
-/// @DnDArgument : "code" "/// @description Execute Code$(13_10)draw_self()$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)"
-/// @description Execute Code
-draw_self()
+/// @DnDHash : 715C63EF
+event_inherited();
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
@@ -18,12 +16,11 @@ draw_self()
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
 /// @DnDHash : 1E48E4E1
-/// @DnDDisabled : 1
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y" "bbox_top - 100"
-/// @DnDArgument : "caption" ""enemy_entering_state:""
-/// @DnDArgument : "var" "enemy_entering_state"
-
+/// @DnDArgument : "caption" ""hp""
+/// @DnDArgument : "var" "enemy_hpnow"
+draw_text(x + 0, bbox_top - 100, string("hp") + string(enemy_hpnow));
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1

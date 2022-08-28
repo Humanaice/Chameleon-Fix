@@ -1,9 +1,7 @@
-/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDAction : YoYo Games.Instances.Inherit_Event
 /// @DnDVersion : 1
-/// @DnDHash : 756D9D08
-/// @DnDArgument : "code" "/// @description Execute Code$(13_10)draw_self()$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)"
-/// @description Execute Code
-draw_self()
+/// @DnDHash : 2419446F
+event_inherited();
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1

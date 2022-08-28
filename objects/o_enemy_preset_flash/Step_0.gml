@@ -1,3 +1,8 @@
+/// @DnDAction : YoYo Games.Instances.Inherit_Event
+/// @DnDVersion : 1
+/// @DnDHash : 3A5733CD
+event_inherited();
+
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 79A6283A
@@ -8,10 +13,11 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 4135568C
-/// @DnDArgument : "code" "/// @description Execute Code$(13_10)$(13_10)image_angle = direction - 90$(13_10)$(13_10)switch enemy_state$(13_10){$(13_10)	case enemystate.ENTERING:$(13_10)	{$(13_10)		if (path_position >= 1)$(13_10)		{$(13_10)			enemy_state = enemystate.SHOTTING;$(13_10)		}$(13_10)		break$(13_10)	}$(13_10)	case enemystate.SHOTTING:$(13_10)	{$(13_10)		if (cool_fire <= 0)$(13_10)		{$(13_10)			script_execute(scr_fire_enemy_bullet)$(13_10)			enemy_state = enemystate.FLEEING;$(13_10)		}$(13_10)		cool_fire -= 1;$(13_10)		break;$(13_10)	}$(13_10)	case enemystate.FLEEING:$(13_10)	{$(13_10)		if (time_to_move <= 0)$(13_10)		{$(13_10)			if (!instance_exists(_inst))$(13_10)			{$(13_10)				if (!go_at_once)$(13_10)				{$(13_10)					path_start(_outpath,15,path_action_stop,false)$(13_10)					go_at_once = true$(13_10)				} else $(13_10)				{ $(13_10)					if (path_position == 1)$(13_10)					{$(13_10)						can_explode_bullets = false$(13_10)						instance_destroy()$(13_10)					}$(13_10)				}$(13_10)			}$(13_10)		}$(13_10)		time_to_move --;$(13_10)	}$(13_10)}$(13_10)	$(13_10)$(13_10)	$(13_10)$(13_10)$(13_10)$(13_10)"
+/// @DnDArgument : "code" "/// @description Execute Code$(13_10)$(13_10)image_angle = direction - 90$(13_10)$(13_10)$(13_10)switch enemy_state$(13_10){$(13_10)	case enemystate.ENTERING:$(13_10)	{$(13_10)		if (path_position >= 1)$(13_10)		{$(13_10)			enemy_state = enemystate.SHOTTING;$(13_10)		}$(13_10)		break$(13_10)	}$(13_10)	case enemystate.SHOTTING:$(13_10)	{$(13_10)		if (cool_fire <= 0)$(13_10)		{$(13_10)			script_execute(scr_fire_enemy_bullet)$(13_10)			enemy_state = enemystate.FLEEING;$(13_10)		}$(13_10)		cool_fire -= 1;$(13_10)		break;$(13_10)	}$(13_10)	case enemystate.FLEEING:$(13_10)	{$(13_10)		if (time_to_move <= 0)$(13_10)		{$(13_10)			if (!instance_exists(_inst))$(13_10)			{$(13_10)				if (!go_at_once)$(13_10)				{$(13_10)					path_start(_outpath,15,path_action_stop,false)$(13_10)					go_at_once = true$(13_10)				} else $(13_10)				{ $(13_10)					if (path_position == 1)$(13_10)					{$(13_10)						can_explode_bullets = false$(13_10)						instance_destroy()$(13_10)					}$(13_10)				}$(13_10)			}$(13_10)		}$(13_10)		time_to_move --;$(13_10)	}$(13_10)}$(13_10)	$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)"
 /// @description Execute Code
 
 image_angle = direction - 90
+
 
 switch enemy_state
 {

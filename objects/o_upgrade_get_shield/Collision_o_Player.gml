@@ -8,12 +8,12 @@ with(other) {
 }
 
 /// @DnDAction : YoYo Games.Audio.Audio_Set_Volume
-/// @DnDVersion : 1
+/// @DnDVersion : 1.1
 /// @DnDHash : 717634D4
 /// @DnDArgument : "sound" "snd_pickup_1"
-/// @DnDArgument : "volume" "random_range(0.7,1.5)"
+/// @DnDArgument : "volume" "random_range(0.3,0.5)"
 /// @DnDSaveInfo : "sound" "snd_pickup_1"
-audio_sound_gain(snd_pickup_1, random_range(0.7,1.5), 0);
+audio_sound_gain(snd_pickup_1, random_range(0.3,0.5), 0);
 
 /// @DnDAction : YoYo Games.Audio.Play_Audio
 /// @DnDVersion : 1

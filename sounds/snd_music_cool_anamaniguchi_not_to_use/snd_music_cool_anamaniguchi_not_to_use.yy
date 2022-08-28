@@ -14,8 +14,8 @@
   "soundFile": "snd_music_cool_anamaniguchi_not_to_use.mp3",
   "duration": 227.13475,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_music_cool_anamaniguchi_not_to_use",

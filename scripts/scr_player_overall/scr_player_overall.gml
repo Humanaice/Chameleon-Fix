@@ -10,47 +10,50 @@ function scr_player_overall()
 	/// @DnDHash : 565DC8B3
 	/// @DnDComment : Player Inputs$(13_10)Initial movement temp vribles$(13_10)Normal/Diagonal movements
 	/// @DnDParent : 0B0F624D
-	/// @DnDArgument : "code" "//Scripts$(13_10)$(13_10)script_execute(scr_get_input)$(13_10)$(13_10)//getting inputs$(13_10)var dhspeed = 0;$(13_10)var dvspeed = 0;$(13_10)var keyhdirection = rightkey - leftkey;$(13_10)var keyvdirection  = downkey - upkey;$(13_10)$(13_10)if (gphmove != 0) or (gpvmove != 0) $(13_10){$(13_10)	dhspeed = sign(gphmove);$(13_10)	dvspeed = sign(gpvmove);$(13_10)$(13_10)}$(13_10)if (keyhdirection != 0) or (keyvdirection != 0) $(13_10){$(13_10)	dhspeed = sign(keyhdirection);$(13_10)	dvspeed = sign(keyvdirection);$(13_10)}$(13_10)$(13_10)//Movement$(13_10)if (can_move)$(13_10){$(13_10)hspd = dhspeed * spd$(13_10)vspd = dvspeed * spd$(13_10)} else$(13_10){$(13_10)	hspd = 0$(13_10)}$(13_10)//Diagonal Movement$(13_10)$(13_10)if (dhspeed != 0) and (dvspeed != 0) $(13_10){$(13_10)	spd = dagspd;$(13_10)} else $(13_10){$(13_10)	spd = walkspd;$(13_10)}$(13_10)$(13_10)$(13_10)$(13_10)"
+	/// @DnDArgument : "code" "//Scripts$(13_10)$(13_10)script_execute(scr_get_input)$(13_10)$(13_10)//getting inputs$(13_10)var _dhspeed = 0;$(13_10)var _dvspeed = 0;$(13_10)var keyhdirection = rightkey - leftkey;$(13_10)var keyvdirection  = downkey - upkey;$(13_10)$(13_10)if (gphmove != 0) or (gpvmove != 0) $(13_10){$(13_10)	_dhspeed = sign(gphmove);$(13_10)	_dvspeed = sign(gpvmove);$(13_10)$(13_10)}$(13_10)if (keyhdirection != 0) or (keyvdirection != 0) $(13_10){$(13_10)	_dhspeed = sign(keyhdirection);$(13_10)	_dvspeed = sign(keyvdirection);$(13_10)}$(13_10)$(13_10)//Movement$(13_10)if (can_move)$(13_10){$(13_10)hspd = _dhspeed * spd$(13_10)vspd = _dvspeed * spd$(13_10)} else$(13_10){$(13_10)	hspd = 0$(13_10)}$(13_10)//Diagonal Movement$(13_10)$(13_10)if (_dhspeed != 0) and (_dvspeed != 0) $(13_10){$(13_10)	spd = dagspd;$(13_10)} else $(13_10){$(13_10)	spd = walkspd;$(13_10)}$(13_10)$(13_10)dhspeed = _dhspeed$(13_10)dvspeed = _dvspeed$(13_10)"
 	//Scripts
 	
 	script_execute(scr_get_input)
 	
 	//getting inputs
-	var dhspeed = 0;
-	var dvspeed = 0;
+	var _dhspeed = 0;
+	var _dvspeed = 0;
 	var keyhdirection = rightkey - leftkey;
 	var keyvdirection  = downkey - upkey;
 	
 	if (gphmove != 0) or (gpvmove != 0) 
 	{
-		dhspeed = sign(gphmove);
-		dvspeed = sign(gpvmove);
+		_dhspeed = sign(gphmove);
+		_dvspeed = sign(gpvmove);
 	
 	}
 	if (keyhdirection != 0) or (keyvdirection != 0) 
 	{
-		dhspeed = sign(keyhdirection);
-		dvspeed = sign(keyvdirection);
+		_dhspeed = sign(keyhdirection);
+		_dvspeed = sign(keyvdirection);
 	}
 	
 	//Movement
 	if (can_move)
 	{
-	hspd = dhspeed * spd
-	vspd = dvspeed * spd
+	hspd = _dhspeed * spd
+	vspd = _dvspeed * spd
 	} else
 	{
 		hspd = 0
 	}
 	//Diagonal Movement
 	
-	if (dhspeed != 0) and (dvspeed != 0) 
+	if (_dhspeed != 0) and (_dvspeed != 0) 
 	{
 		spd = dagspd;
 	} else 
 	{
 		spd = walkspd;
 	}
+	
+	dhspeed = _dhspeed
+	dvspeed = _dvspeed
 
 	/// @DnDAction : YoYo Games.Common.Execute_Code
 	/// @DnDVersion : 1
@@ -153,10 +156,10 @@ function scr_player_overall()
 	/// @DnDHash : 188652F5
 	/// @DnDComment : Hp
 	/// @DnDParent : 0B0F624D
-	/// @DnDArgument : "code" "// HP$(13_10)$(13_10)hp_now = hp_now$(13_10)$(13_10)if (hpcooldown > 0) $(13_10){$(13_10)	hpcooldown --;$(13_10)}$(13_10)$(13_10)if (hpcooldown <= 0) $(13_10){$(13_10)	player_damaged = false;$(13_10)}$(13_10)"
+	/// @DnDArgument : "code" "// HP$(13_10)$(13_10)hpcurrent = hpcurrent$(13_10)$(13_10)if (hpcooldown > 0) $(13_10){$(13_10)	hpcooldown --;$(13_10)}$(13_10)$(13_10)if (hpcooldown <= 0) $(13_10){$(13_10)	player_damaged = false;$(13_10)}$(13_10)$(13_10)$(13_10)"
 	// HP
 	
-	hp_now = hp_now
+	hpcurrent = hpcurrent
 	
 	if (hpcooldown > 0) 
 	{
@@ -195,12 +198,59 @@ function scr_player_overall()
 	/// @DnDVersion : 1
 	/// @DnDHash : 6282F419
 	/// @DnDParent : 0B0F624D
-	/// @DnDArgument : "code" "if (playerfire) $(13_10){$(13_10)	if (player_fire_cool <= 0) $(13_10)	{$(13_10)$(13_10)		var _inst0 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[0]);$(13_10)		var _inst1 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[1]);$(13_10)		var _inst2 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[2]);$(13_10)		with(_inst0) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)				creator = o_Player$(13_10)			}$(13_10)		with(_inst1) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)				creator = o_Player$(13_10)			}$(13_10)		with(_inst2) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)				creator = o_Player$(13_10)			}$(13_10)		player_fire_cool = player_fire_short_cool$(13_10)	}$(13_10)}$(13_10)$(13_10)if (player_fire_cool > 0) $(13_10){$(13_10)	player_fire_cool --;$(13_10)}$(13_10)"
+	/// @DnDArgument : "code" "if (playerfire) $(13_10){$(13_10)	if (player_bullet_cooldown[0] <= 0)$(13_10)	{$(13_10)		var _inst0 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[0]);$(13_10)		with(_inst0) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)				creator = o_Player$(13_10)				bullet_dmg = other.player_bullet_damage * other.player_bullet_damage_mult[0]$(13_10)			}$(13_10)		player_bullet_cooldown[0] = player_bullet_add_cooldown[0]$(13_10)	}else$(13_10)	{$(13_10)		player_bullet_cooldown[0] --;$(13_10)	}$(13_10)	$(13_10)	if (player_bullet_cooldown[1] <= 0)$(13_10)	{$(13_10)		var _inst0 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[1]);$(13_10)		with(_inst0) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)				creator = o_Player$(13_10)				bullet_dmg = other.player_bullet_damage * other.player_bullet_damage_mult[1]$(13_10)			}$(13_10)		player_bullet_cooldown[1] = player_bullet_add_cooldown[1]$(13_10)	}else$(13_10)	{$(13_10)		player_bullet_cooldown[1] --;$(13_10)	}$(13_10)	$(13_10)	if (player_bullet_cooldown[2] <= 0)$(13_10)	{$(13_10)		var _inst0 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[2]);$(13_10)		with(_inst0) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)				creator = o_Player$(13_10)				bullet_dmg = other.player_bullet_damage * other.player_bullet_damage_mult[2]$(13_10)			}$(13_10)		player_bullet_cooldown[2] = player_bullet_add_cooldown[2]$(13_10)	}else$(13_10)	{$(13_10)		player_bullet_cooldown[2] --;$(13_10)	}$(13_10)	/*$(13_10)	if (player_fire_cool <= 0) $(13_10)	{$(13_10)		var _inst0 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[0]);$(13_10)		var _inst1 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[1]);$(13_10)		var _inst2 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[2]);$(13_10)		with(_inst0) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)				creator = o_Player$(13_10)				bullet_dmg = other.player_bullet_damage * other.player_bullet_damage_mult[0]$(13_10)			}$(13_10)		with(_inst1) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)				creator = o_Player$(13_10)			}$(13_10)		with(_inst2) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)				creator = o_Player$(13_10)			}$(13_10)		player_fire_cool = player_fire_short_cool$(13_10)	}$(13_10)	*/$(13_10)	$(13_10)}$(13_10)$(13_10)if (player_fire_cool > 0) $(13_10){$(13_10)	player_fire_cool --;$(13_10)}$(13_10)$(13_10)/*$(13_10)if (player_bullet_cooldown[0] <= 0)$(13_10){$(13_10)		var _inst0 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[0]);$(13_10)		with(_inst0) $(13_10)			{$(13_10)				bullet_team = fireteam.ALLY;$(13_10)				bullet_angle = other.player_direction;$(13_10)				creator = o_Player$(13_10)				bullet_dmg = other.player_bullet_damage * other.player_bullet_damage_mult[0]$(13_10)			}$(13_10)		player_bullet_cooldown[0] = player_bullet_add_cooldown[0]$(13_10)}else$(13_10){$(13_10)	player_bullet_cooldown[0] --;$(13_10)}$(13_10)*/$(13_10)"
 	if (playerfire) 
 	{
+		if (player_bullet_cooldown[0] <= 0)
+		{
+			var _inst0 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[0]);
+			with(_inst0) 
+				{
+					bullet_team = fireteam.ALLY;
+					bullet_angle = other.player_direction;
+					creator = o_Player
+					bullet_dmg = other.player_bullet_damage * other.player_bullet_damage_mult[0]
+				}
+			player_bullet_cooldown[0] = player_bullet_add_cooldown[0]
+		}else
+		{
+			player_bullet_cooldown[0] --;
+		}
+		
+		if (player_bullet_cooldown[1] <= 0)
+		{
+			var _inst0 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[1]);
+			with(_inst0) 
+				{
+					bullet_team = fireteam.ALLY;
+					bullet_angle = other.player_direction;
+					creator = o_Player
+					bullet_dmg = other.player_bullet_damage * other.player_bullet_damage_mult[1]
+				}
+			player_bullet_cooldown[1] = player_bullet_add_cooldown[1]
+		}else
+		{
+			player_bullet_cooldown[1] --;
+		}
+		
+		if (player_bullet_cooldown[2] <= 0)
+		{
+			var _inst0 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[2]);
+			with(_inst0) 
+				{
+					bullet_team = fireteam.ALLY;
+					bullet_angle = other.player_direction;
+					creator = o_Player
+					bullet_dmg = other.player_bullet_damage * other.player_bullet_damage_mult[2]
+				}
+			player_bullet_cooldown[2] = player_bullet_add_cooldown[2]
+		}else
+		{
+			player_bullet_cooldown[2] --;
+		}
+		/*
 		if (player_fire_cool <= 0) 
 		{
-	
 			var _inst0 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[0]);
 			var _inst1 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[1]);
 			var _inst2 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[2]);
@@ -209,6 +259,7 @@ function scr_player_overall()
 					bullet_team = fireteam.ALLY;
 					bullet_angle = other.player_direction;
 					creator = o_Player
+					bullet_dmg = other.player_bullet_damage * other.player_bullet_damage_mult[0]
 				}
 			with(_inst1) 
 				{
@@ -224,12 +275,33 @@ function scr_player_overall()
 				}
 			player_fire_cool = player_fire_short_cool
 		}
+		*/
+		
 	}
 	
 	if (player_fire_cool > 0) 
 	{
 		player_fire_cool --;
 	}
+	
+	/*
+	if (player_bullet_cooldown[0] <= 0)
+	{
+			var _inst0 = instance_create_layer(x,bbox_top,"Layer_bullet",ds_fire_type_list[0]);
+			with(_inst0) 
+				{
+					bullet_team = fireteam.ALLY;
+					bullet_angle = other.player_direction;
+					creator = o_Player
+					bullet_dmg = other.player_bullet_damage * other.player_bullet_damage_mult[0]
+				}
+			player_bullet_cooldown[0] = player_bullet_add_cooldown[0]
+	}else
+	{
+		player_bullet_cooldown[0] --;
+	}
+	*/
+	/**/
 
 	/// @DnDAction : YoYo Games.Common.Execute_Code
 	/// @DnDVersion : 1

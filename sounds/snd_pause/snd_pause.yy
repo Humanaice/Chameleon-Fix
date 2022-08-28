@@ -14,8 +14,8 @@
   "soundFile": "snd_pause.ogg",
   "duration": 7.973958,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_pause",

@@ -15,20 +15,20 @@ if(!(bullet_team == fireteam.ENEMY))
 
 	/// @DnDAction : YoYo Games.Audio.Audio_Set_Volume
 	/// @DnDVersion : 1.1
-	/// @DnDHash : 0098DF16
+	/// @DnDHash : 523197B5
 	/// @DnDParent : 4D305689
-	/// @DnDArgument : "sound" "sf_laser_explosion"
-	/// @DnDArgument : "volume" "2"
-	/// @DnDSaveInfo : "sound" "sf_laser_explosion"
-	audio_sound_gain(sf_laser_explosion, 2, 0);
+	/// @DnDArgument : "sound" "snd_enemy_hurt"
+	/// @DnDArgument : "volume" "random_range(0.5,1.5)"
+	/// @DnDSaveInfo : "sound" "snd_enemy_hurt"
+	audio_sound_gain(snd_enemy_hurt, random_range(0.5,1.5), 0);
 
 	/// @DnDAction : YoYo Games.Audio.Play_Audio
 	/// @DnDVersion : 1
-	/// @DnDHash : 628F68F4
+	/// @DnDHash : 1C47DEC4
 	/// @DnDParent : 4D305689
-	/// @DnDArgument : "soundid" "sf_laser_explosion"
-	/// @DnDSaveInfo : "soundid" "sf_laser_explosion"
-	audio_play_sound(sf_laser_explosion, 0, 0);
+	/// @DnDArgument : "soundid" "snd_enemy_hurt"
+	/// @DnDSaveInfo : "soundid" "snd_enemy_hurt"
+	audio_play_sound(snd_enemy_hurt, 0, 0);
 
 	/// @DnDAction : YoYo Games.Instances.Create_Instance
 	/// @DnDVersion : 1

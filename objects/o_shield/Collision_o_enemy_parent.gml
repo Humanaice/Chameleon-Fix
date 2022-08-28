@@ -1,41 +1,62 @@
-/// @DnDAction : YoYo Games.Instances.Create_Instance
+/// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
-/// @DnDHash : 1C176508
-/// @DnDArgument : "xpos" "other.x"
-/// @DnDArgument : "ypos" "other.y"
-/// @DnDArgument : "objectid" "o_explosion"
-/// @DnDArgument : "layer" ""Layer_effects""
-/// @DnDSaveInfo : "objectid" "o_explosion"
-instance_create_layer(other.x, other.y, "Layer_effects", o_explosion);
+/// @DnDHash : 0EFD970C
+/// @DnDArgument : "var" "bullet_team"
+/// @DnDArgument : "not" "1"
+/// @DnDArgument : "value" "fireteam.ENEMY"
+if(!(bullet_team == fireteam.ENEMY))
+{
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 5B010640
+	/// @DnDApplyTo : other
+	/// @DnDParent : 0EFD970C
+	/// @DnDArgument : "expr" "false"
+	/// @DnDArgument : "var" "can_explode_bullets"
+	with(other) {
+	can_explode_bullets = false;
+	
+	}
 
-/// @DnDAction : YoYo Games.Audio.Audio_Set_Volume
-/// @DnDVersion : 1.1
-/// @DnDHash : 5B38F902
-/// @DnDArgument : "sound" "sf_laser_explosion"
-/// @DnDArgument : "volume" "2"
-/// @DnDSaveInfo : "sound" "sf_laser_explosion"
-audio_sound_gain(sf_laser_explosion, 2, 0);
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 66F8749C
+	/// @DnDApplyTo : other
+	/// @DnDParent : 0EFD970C
+	/// @DnDArgument : "expr" "-other.bullet_dmg"
+	/// @DnDArgument : "expr_relative" "1"
+	/// @DnDArgument : "var" "enemy_hpnow"
+	with(other) {
+	enemy_hpnow += -other.bullet_dmg;
+	
+	}
 
-/// @DnDAction : YoYo Games.Audio.Play_Audio
-/// @DnDVersion : 1
-/// @DnDHash : 058ADADF
-/// @DnDArgument : "soundid" "sf_laser_explosion"
-/// @DnDSaveInfo : "soundid" "sf_laser_explosion"
-audio_play_sound(sf_laser_explosion, 0, 0);
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 558C18BF
+	/// @DnDApplyTo : other
+	/// @DnDParent : 0EFD970C
+	/// @DnDArgument : "expr" "1"
+	/// @DnDArgument : "var" "flash"
+	with(other) {
+	flash = 1;
+	
+	}
 
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 5B010640
-/// @DnDApplyTo : other
-/// @DnDArgument : "expr" "false"
-/// @DnDArgument : "var" "can_explode_bullets"
-with(other) {
-can_explode_bullets = false;
+	/// @DnDAction : YoYo Games.Audio.Audio_Set_Volume
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 703862B1
+	/// @DnDParent : 0EFD970C
+	/// @DnDArgument : "sound" "snd_enemy_hurt"
+	/// @DnDArgument : "volume" "random_range(0.5,1.5)"
+	/// @DnDSaveInfo : "sound" "snd_enemy_hurt"
+	audio_sound_gain(snd_enemy_hurt, random_range(0.5,1.5), 0);
 
+	/// @DnDAction : YoYo Games.Audio.Play_Audio
+	/// @DnDVersion : 1
+	/// @DnDHash : 500E1233
+	/// @DnDParent : 0EFD970C
+	/// @DnDArgument : "soundid" "snd_enemy_hurt"
+	/// @DnDSaveInfo : "soundid" "snd_enemy_hurt"
+	audio_play_sound(snd_enemy_hurt, 0, 0);
 }
-
-/// @DnDAction : YoYo Games.Instances.Destroy_Instance
-/// @DnDVersion : 1
-/// @DnDHash : 412C15E7
-/// @DnDApplyTo : other
-with(other) instance_destroy();

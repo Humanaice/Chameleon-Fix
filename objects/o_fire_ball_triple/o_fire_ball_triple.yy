@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_nothing",
+    "path": "sprites/spr_nothing/spr_nothing.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

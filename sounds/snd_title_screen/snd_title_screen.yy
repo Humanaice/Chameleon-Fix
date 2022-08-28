@@ -14,8 +14,8 @@
   "soundFile": "snd_title_screen.ogg",
   "duration": 47.984375,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_title_screen",
